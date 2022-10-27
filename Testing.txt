@@ -1,0 +1,3 @@
+27-10-22
+    Amplify Deploy - OK
+    Project - OK
