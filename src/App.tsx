@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { RigthMenuBar } from './components/rightMenuBar'
 
 function App() {
 
   return (
-    <div>working...</div>
+    <RigthMenuBar/>
   )
 }
 
