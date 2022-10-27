@@ -1,9 +1,10 @@
 import { RigthMenuBarStyled } from "./styled"
+import { BurguerMenu } from "./BurgerMenu"
 
 export const RigthMenuBar = () =>{
     return (
         <RigthMenuBarStyled>
-            test Right MenuBar
+            <BurguerMenu/>
         </RigthMenuBarStyled>
     )
 }
