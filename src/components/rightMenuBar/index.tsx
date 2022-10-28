@@ -21,11 +21,11 @@ export const RigthMenuBar = () =>{
         <RigthMenuBarStyled className={menuOpen}>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>    
+                <a href="#"> · {cover}</a>
                 <a href="#"> · {about}</a>
                 <a href="#"> · {experience}</a>
-                <a href="#"> · {projects}</a>
-                <a href="#"> · {cover}</a>
                 <a href="#"> · {skills}</a>
+                <a href="#"> · {projects}</a>
             </div>
             
         </RigthMenuBarStyled>
