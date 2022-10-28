@@ -4,6 +4,7 @@ type Props ={
     mouseIn: boolean
 }
 
+
 export const BurguerMenuStyled = styled.div<Props>`
     display: flex;
     flex-direction: column;
@@ -12,7 +13,6 @@ export const BurguerMenuStyled = styled.div<Props>`
     margin-top: 15px;
     margin-left: 15px;
     padding: 5px;
-
     height: 60px;
     width: 60px;
 
@@ -23,6 +23,7 @@ export const BurguerMenuStyled = styled.div<Props>`
         transition: all 0.5s ease-in-out;
         border: 1px solid #ffff;
         border-radius: 5px;
+        background-color: ${props => props.mouseIn ? '#001D66' : '#ffff'};
     }
     
     .line01, .line03 {

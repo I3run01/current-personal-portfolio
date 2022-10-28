@@ -1,13 +1,19 @@
 import { useState } from "react"
 import { BurguerMenuStyled } from "./styled"
 
-export const BurguerMenu = () => {
+type Props = {
+    fction: () => void
+}
+
+export const BurguerMenu = ({fction}:Props) => {
     const [openMenu, setOpenMenu] = useState<string>('menuClosed')
     const [mouseIn, setMouseIn] = useState<boolean>(false)
 
     const ChangeMenu = () => {
         if(openMenu == 'menuClosed') setOpenMenu('menuOpened')
         else setOpenMenu('menuClosed')
+
+        fction()
     }
 
     return (

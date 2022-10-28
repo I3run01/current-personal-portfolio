@@ -4,6 +4,12 @@ import { useState } from "react"
 
 export const RigthMenuBar = () =>{
 
+    const [menuOpen, setMenuOpen] = useState<string>('opened')
+
+    const handleMenuButton = () => {
+        menuOpen === 'opened' ? setMenuOpen('closed') :  setMenuOpen('opened')
+    }
+
     //Texts
     const [cover, setCover] = useState('Cover')
     const [about, setAbout] = useState('About')
@@ -12,13 +18,16 @@ export const RigthMenuBar = () =>{
     const [projects, setProjects] = useState('Projects')
 
     return (
-        <RigthMenuBarStyled>
-            <BurguerMenu/>    
-            <a href=""><li>{cover}</li></a>
-            <a href=""><li>{about}</li></a>
-            <a href=""><li>{experience}</li></a>
-            <a href=""><li>{skills}</li></a>
-            <a href=""><li>{projects}</li></a>
+        <RigthMenuBarStyled className={menuOpen}>
+            <div className={`container ${menuOpen}`}>
+                <BurguerMenu fction={handleMenuButton}/>    
+                <a href="#"> · {about}</a>
+                <a href="#"> · {experience}</a>
+                <a href="#"> · {projects}</a>
+                <a href="#"> · {cover}</a>
+                <a href="#"> · {skills}</a>
+            </div>
+            
         </RigthMenuBarStyled>
     )
 }
