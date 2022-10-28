@@ -13,14 +13,12 @@ export const RigthMenuBar = () =>{
 
     return (
         <RigthMenuBarStyled>
-            <BurguerMenu/>
-            <ul>
-                <a href=""><li>{cover}</li></a>
-                <a href=""><li>{about}</li></a>
-                <a href=""><li>{experience}</li></a>
-                <a href=""><li>{skills}</li></a>
-                <a href=""><li>{projects}</li></a>
-            </ul>
+            <BurguerMenu/>    
+            <a href=""><li>{cover}</li></a>
+            <a href=""><li>{about}</li></a>
+            <a href=""><li>{experience}</li></a>
+            <a href=""><li>{skills}</li></a>
+            <a href=""><li>{projects}</li></a>
         </RigthMenuBarStyled>
     )
 }

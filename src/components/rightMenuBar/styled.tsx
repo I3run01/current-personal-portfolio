@@ -7,21 +7,22 @@ export const RigthMenuBarStyled = styled.div`
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #7199FF;
     height: 100vh;
     width: 300px;
-    border: 1px solid #ffff;
     box-shadow: 1px 1px 1px black;
 
-    ul {
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    a {
         font-family: 'Dosis', sans-serif;
         font-size: 32px;
-        a {
-            color: #ffff;
+        color: #ffff;
+        padding-bottom: 60px;
+        margin-left: 10px;
+        :hover {
+            color: #151433;
         }
     }
 `
