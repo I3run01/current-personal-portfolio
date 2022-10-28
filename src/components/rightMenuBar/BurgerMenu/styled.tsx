@@ -20,7 +20,7 @@ export const BurguerMenuStyled = styled.div<Props>`
 
     .line01, .line02, .line03 {
         height: 4px;
-        background-color: ${props => props.mouseIn ? #ffff : #7199FF};
+        //background-color: ${props => props.mouseIn ? #ffff : #013cd1};
         transition: all 0.5s ease-in-out;
         border: 1px solid #ffff;
         border-radius: 5px;
