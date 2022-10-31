@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RigthMenuBarStyled = styled.div`
+export const LeftMenuBarStyled = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
     .container {

@@ -1,10 +1,10 @@
-import { RigthMenuBarStyled } from "./styled"
+import { LeftMenuBarStyled } from "./styled"
 import { BurguerMenu } from "./BurgerMenu"
 import { useState } from "react"
 
-export const RigthMenuBar = () =>{
+export const LeftMenuBar = () =>{
 
-    const [menuOpen, setMenuOpen] = useState<string>('opened')
+    const [menuOpen, setMenuOpen] = useState<string>('closed')
 
     const handleMenuButton = () => {
         menuOpen === 'opened' ? setMenuOpen('closed') :  setMenuOpen('opened')
@@ -18,7 +18,7 @@ export const RigthMenuBar = () =>{
     const [projects, setProjects] = useState('Projects')
 
     return (
-        <RigthMenuBarStyled className={menuOpen}>
+        <LeftMenuBarStyled className={menuOpen}>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>    
                 <a href="#"> · {cover}</a>
@@ -28,6 +28,6 @@ export const RigthMenuBar = () =>{
                 <a href="#"> · {projects}</a>
             </div>
             
-        </RigthMenuBarStyled>
+        </LeftMenuBarStyled>
     )
 }
