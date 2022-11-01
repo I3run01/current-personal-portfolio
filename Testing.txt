@@ -9,3 +9,7 @@
 31-10-2022
     Amplify Deploy - OK
     Project - OK
+
+01-11-2022
+    Amplify Deploy - OK
+    Project - Ok
