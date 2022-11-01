@@ -1,5 +1,6 @@
 import { LeftMenuBar } from './components/leftMenuBar'
 import { RightMenuBar } from './components/rightMenuBar/index'
+import { TopMenuBar } from './components/TopMenuBar'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div>
       <LeftMenuBar/>
       <RightMenuBar/>
+      <TopMenuBar/>
     </div>  
   )
 }

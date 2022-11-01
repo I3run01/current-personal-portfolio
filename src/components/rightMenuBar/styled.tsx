@@ -20,8 +20,8 @@ export const RightMenuBarStyled = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 110px;
-            height: 90%;
+            width: 70px;
+            height: 80%;
 
             a {
                 margin: auto;
@@ -33,7 +33,7 @@ export const RightMenuBarStyled = styled.div`
 
     //Animation
     .opened {
-        width: 100px;
+        width: 70px;
     }
 
 

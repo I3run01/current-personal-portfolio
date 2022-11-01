@@ -21,7 +21,8 @@ export const BurguerMenu = ({fction}:Props) => {
             onClick={ChangeMenu}
             onMouseEnter={()=>{setMouseIn(true)}}
             onMouseLeave={()=> {setMouseIn(false)}}
-            mouseIn={mouseIn}>
+            mouseIn={mouseIn}
+            id='burguerMenu'>
             <div className={`line01 line01${openMenu}`}/>
             <div className={`line02 line02${openMenu}`}/>
             <div className={`line03 line03${openMenu}`}/>

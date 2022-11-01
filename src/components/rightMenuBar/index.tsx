@@ -21,12 +21,12 @@ export const RightMenuBar = () => {
             ftcion={closerOrOpenMenu}/>
             <div className={`container ${sideMenhOpenedOrClosed}`}>
                 <div className="Icons">
-                    <a href="#"><GitHubIcon/></a>
-                    <a href="#"><LinkedInIcon/></a>
-                    <a href="#"><CvIcon/></a>
-                    <a href="#"><InstagramIcon/></a>
                     <a href="#"><TelegramIcon/></a>
                     <a href="#"><WhatsAppIcon/></a>
+                    <a href="#"><LinkedInIcon/></a>
+                    <a href="#"><GitHubIcon/></a>
+                    <a href="#"><CvIcon/></a>
+                    <a href="#"><InstagramIcon/></a>
                 </div>
             </div>
         </RightMenuBarStyled>

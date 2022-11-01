@@ -6,7 +6,7 @@ type props = {
 
 export const IconRightMenuBarStyled = styled.div<props>`
     position: fixed;
-    right: 21px;
+    right: 9px;
     bottom: 12px;
     height: 50px;
     width: 50px;
@@ -15,7 +15,7 @@ export const IconRightMenuBarStyled = styled.div<props>`
 
     .line01, .line02 {
         position: fixed;
-        right: 25px;
+        right: 12px;
         bottom: 35px;
 
         width: 40px;

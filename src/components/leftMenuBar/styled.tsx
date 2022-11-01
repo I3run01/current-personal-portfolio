@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const LeftMenuBarStyled = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
+    #burguerMenu {
+        transform: scale(80%);
+    }
+
     .container {
         position: fixed;
         top: 0;
@@ -14,7 +18,7 @@ export const LeftMenuBarStyled = styled.div`
         background-color: #7199FF;
         height: 100vh;
         box-shadow: 1px 1px 1px black;
-        width: 300px;
+        width: 250px;
         transition: all 0.5s ease-in-out;
 
         a {

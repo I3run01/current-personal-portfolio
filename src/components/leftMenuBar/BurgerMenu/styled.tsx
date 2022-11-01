@@ -10,8 +10,8 @@ export const BurguerMenuStyled = styled.div<Props>`
     flex-direction: column;
     justify-content: space-between;
     
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
     padding: 5px;
     height: 60px;
     width: 60px;
