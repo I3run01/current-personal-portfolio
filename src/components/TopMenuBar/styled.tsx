@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const TopMenuBarStyled = styled.div`
+type props = {
+    theme: string
+}
+
+export const TopMenuBarStyled = styled.div<props>`
     position: fixed;
     top: 0;
 
@@ -12,10 +16,10 @@ export const TopMenuBarStyled = styled.div`
     width: calc(100% - 70px);
 
     .themeBTN, .languageBTN {
-        margin-right: 10px;
+        padding: 0;
         transform: scale(50%);
         margin: 0;
-        filter: brightness(0) invert(1);
+        filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
         
         :hover {
             cursor: pointer;

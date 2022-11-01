@@ -6,13 +6,50 @@ export const TopMenuBar = () => {
     const {state, dispatch} = useContext(Context)
 
     const changeTheme = () => {
-        dispatch
+        if( state.theme.status === 'dark' ) {
+            dispatch({
+                type: 'changeTheme',
+                payload: {
+                    status: 'light'
+                }
+            })
+        } else {
+            dispatch({
+                type: 'changeTheme',
+                payload: {
+                    status: 'dark'
+                }
+            })
+        }
     }
 
+    
+    const changeLanguage = () => {
+        if (state.language.status === 'english') {
+            dispatch({
+                type: 'changeLanguage',
+                payload: {
+                    status: 'portuguese'
+                }
+            })
+        } else {
+            dispatch({
+                type: 'changeLanguage',
+                payload: {
+                    status: 'english'
+                }
+            })
+        }
+    }
+    
+
     return (
-        <TopMenuBarStyled>
-            <img src="TopMenuBar/BrazilLogo.svg" alt="" className="languageBTN" />
-            <img src="TopMenuBar/Sun.svg" alt="" className="themeBTN" onClick={changeTheme}/>
+        <TopMenuBarStyled
+        theme={state.theme.status}>
+            <img src="TopMenuBar/BrazilLogo.svg" alt="" className="languageBTN" onClick={changeLanguage}/>
+            {state.theme.status === 'dark' ?
+            <img src="TopMenuBar/Sun.svg" alt="" className="themeBTN" onClick={changeTheme}/> :
+            <img src="TopMenuBar/Moon.svg" alt="" className="themeBTN" onClick={changeTheme}/> }
         </TopMenuBarStyled>
     )
 }

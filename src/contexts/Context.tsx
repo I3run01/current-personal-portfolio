@@ -4,12 +4,11 @@ import { reducerActionType } from "../types/reducerActionsType";
 
 //Imports
 import { themeReducer, themeInitialState, ThemeType  } from "../reducers/themeReducer";
-import { languageReducer, languageInitialState, LanguageType } from  "../reducers/languageReducer"
-
+import { languageReducer, languageInitialState, LanguageType} from "../reducers/languageReducer"
 
 //Campo editável
 type initialStateType = {
-    theme: ThemeType
+    theme: ThemeType,
     language: LanguageType
 }
 
@@ -44,7 +43,7 @@ export const ContextProvider: React.FC<{children: React.ReactNode}> = ({children
     //coloque dentro do useEffect as função que queira guardar no localStorage
     useEffect(() => {
         localStorage.setItem('theme', state.theme.status as string)
-        localStorage.setItem('language', state.language.status as string )
+        localStorage.setItem('language', state.language.status as string)
     })
 
     return (

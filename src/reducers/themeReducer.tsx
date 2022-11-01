@@ -7,14 +7,14 @@ export type ThemeType = {
 export const themeInitialState: ThemeType = {
 
     //Concatenasse para poder usar o localStorage
-    status: localStorage.getItem('theme') ? localStorage.getItem('theme') : 'white'
+    status: localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
 }
 
 
 export const themeReducer = (state: ThemeType, action: reducerActionType) => {
 
     switch(action.type) {
-        case 'CHANGE_STATUS':
+        case 'changeTheme':
             return {...state,  status: action.payload.status}
         break
     }

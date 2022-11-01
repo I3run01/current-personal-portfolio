@@ -14,7 +14,7 @@ export const languageInitialState: LanguageType = {
 export const languageReducer = (state: LanguageType, action: reducerActionType) => {
 
     switch(action.type) {
-        case 'Change_language':
+        case 'changeLanguage':
             return {...state,  status: action.payload.status}
         break
     }
