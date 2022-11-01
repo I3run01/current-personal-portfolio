@@ -19,7 +19,7 @@ export const TopMenuBarStyled = styled.div`
         
         :hover {
             cursor: pointer;
-            filter: brightness(80%) invert(0);
+            filter: brightness(100%) invert(0);
         }
     }
     
