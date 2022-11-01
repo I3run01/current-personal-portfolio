@@ -1,18 +1,34 @@
-import { useState } from "react"
+import { IconRightMenuBar } from "./hoverButton"
 import { RightMenuBarStyled } from "./styled"
+import { GitHubIcon } from "./Icons/Icons"
+import { LinkedInIcon } from "./Icons/Icons"
+import { CvIcon } from "./Icons/Icons"
+import { InstagramIcon } from "./Icons/Icons"
+import { TelegramIcon } from "./Icons/Icons"
+import { WhatsAppIcon } from "./Icons/Icons"
+import { useState } from "react"
 
 export const RightMenuBar = () => {
-    const [menuStatus, setMenuStatus] = useState<string>('closed')
+    const [sideMenhOpenedOrClosed, setSideMenhOpenedOrClosed] = useState<string>('closed')
 
-    const handleMenuBTN = () => {
-        menuStatus === 'closed' ? setMenuStatus('opened') : setMenuStatus('closed')
+    const closerOrOpenMenu = () => {
+        sideMenhOpenedOrClosed === 'closed' ? setSideMenhOpenedOrClosed('opened') : setSideMenhOpenedOrClosed('closed')
     }
 
     return (
-        <RightMenuBarStyled
-        onClick={handleMenuBTN}>
-            <div className={`line01 line01${menuStatus}`}></div>
-            <div className={`line02 line02${menuStatus}`}></div>
+        <RightMenuBarStyled>
+            <IconRightMenuBar
+            ftcion={closerOrOpenMenu}/>
+            <div className={`container ${sideMenhOpenedOrClosed}`}>
+                <div className="Icons">
+                    <a href="#"><GitHubIcon/></a>
+                    <a href="#"><LinkedInIcon/></a>
+                    <a href="#"><CvIcon/></a>
+                    <a href="#"><InstagramIcon/></a>
+                    <a href="#"><TelegramIcon/></a>
+                    <a href="#"><WhatsAppIcon/></a>
+                </div>
+            </div>
         </RightMenuBarStyled>
     )
 }

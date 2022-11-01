@@ -1,5 +1,5 @@
 import { LeftMenuBar } from './components/leftMenuBar'
-import { RightMenuBar } from './components/rightMenuBar'
+import { RightMenuBar } from './components/rightMenuBar/index'
 
 function App() {
 

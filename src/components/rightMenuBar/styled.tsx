@@ -1,42 +1,40 @@
 import styled from "styled-components";
 
 export const RightMenuBarStyled = styled.div`
-    position: fixed;
-    right: 21px;
-    bottom: 12px;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-
-
-
-    .line01, .line02 {
+    .container {
         position: fixed;
-        right: 25px;
-        bottom: 35px;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0px;
 
-        width: 40px;
-        height: 4px;
-        background-color: #ffffff;
         transition: all 0.5s ease-in-out;
-        border-radius: 10px;
         
+        /* From https://css.glass */
+        background: rgba(98, 99, 211, 0.14);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.5px);
+        -webkit-backdrop-filter: blur(6.5px);
+
+        .Icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 110px;
+            height: 90%;
+
+            a {
+                margin: auto;
+                transform: scale(80%);
+            }
+
+        }
     }
 
-    .line02 {
-        transform: rotate(90deg);
+    //Animation
+    .opened {
+        width: 100px;
     }
 
-    //animation
-    .line01opened {
-        width: 50px;
-        transform: translateX(5px);
-    }
 
-    .line02opened {
-        rotate: 90deg;
-        opacity: 0;
-    }
-
-    
 `
