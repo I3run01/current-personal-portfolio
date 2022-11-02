@@ -28,8 +28,8 @@ export const BurguerMenuStyled = styled.div<Props>`
         border: 1px solid #ffff;
         border-radius: 5px;
         background-color: ${props => props.mouseIn ?
-         '#001D66' :
-         props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor};
+            '#001D66' :
+            props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor};
     }
     
     .line01, .line03 {

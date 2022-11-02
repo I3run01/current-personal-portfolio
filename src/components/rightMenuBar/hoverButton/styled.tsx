@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 type props = {
     onHover:boolean
+    theme: string
 }
+
+const darkThemeMenuColor = '#ffff'
+const lightThemeMenuColor = '#000000'
 
 export const IconRightMenuBarStyled = styled.div<props>`
     position: fixed;
@@ -20,10 +24,16 @@ export const IconRightMenuBarStyled = styled.div<props>`
 
         width: 40px;
         height: 3px;
-        background-color: ${props => props.onHover ? '#001D66' : '#ffff'};
+        background-color: ${props => props.onHover ? 
+        '#001D66' : 
+        props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor};
         transition: all 0.5s ease-in-out;
 
-        border: 1px solid #ffff;
+        border: 1px solid ${props => props.theme == 'dark' ? 
+        darkThemeMenuColor : 
+        lightThemeMenuColor
+        };
+        
         border-radius: 10px;
         
     }

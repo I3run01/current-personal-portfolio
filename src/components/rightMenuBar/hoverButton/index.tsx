@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Context } from "../../../contexts/Context"
 import { IconRightMenuBarStyled } from "./styled"
 
 type Props = {
@@ -8,6 +9,8 @@ type Props = {
 export const IconRightMenuBar = ({ftcion}:Props) => {
     const [menuStatus, setMenuStatus] = useState<string>('closed')
     const [onHover, setOnHover] = useState<boolean>(false)
+
+    const {state, dispatch} = useContext(Context)
 
     const handleMenuBTN = () => {
         menuStatus === 'closed' ? setMenuStatus('opened') : setMenuStatus('closed')
@@ -19,7 +22,8 @@ export const IconRightMenuBar = ({ftcion}:Props) => {
         onClick={handleMenuBTN}
         onMouseEnter={()=>{setOnHover(true)}}
         onMouseLeave={()=>{setOnHover(false)}}
-        onHover={onHover}>
+        onHover={onHover}
+        theme={state.theme.status}>
             <div className={`line01 line01${menuStatus}`}></div>
             <div className={`line02 line02${menuStatus}`}></div>
         </IconRightMenuBarStyled>
