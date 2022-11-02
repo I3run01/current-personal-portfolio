@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Context } from "../../../contexts/Context"
 import { BurguerMenuStyled } from "./styled"
 
 type Props = {
@@ -8,6 +9,8 @@ type Props = {
 export const BurguerMenu = ({fction}:Props) => {
     const [openMenu, setOpenMenu] = useState<string>('menuClosed')
     const [mouseIn, setMouseIn] = useState<boolean>(false)
+
+    const {state, dispatch} = useContext(Context)
 
     const ChangeMenu = () => {
         if(openMenu == 'menuClosed') setOpenMenu('menuOpened')
@@ -22,6 +25,7 @@ export const BurguerMenu = ({fction}:Props) => {
             onMouseEnter={()=>{setMouseIn(true)}}
             onMouseLeave={()=> {setMouseIn(false)}}
             mouseIn={mouseIn}
+            theme={state.theme.status}
             id='burguerMenu'>
             <div className={`line01 line01${openMenu}`}/>
             <div className={`line02 line02${openMenu}`}/>

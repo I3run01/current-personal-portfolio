@@ -1,9 +1,13 @@
+import { useContext } from "react";
 import styled from "styled-components";
 
 type Props ={
     mouseIn: boolean
+    theme: string
 }
 
+const darkThemeMenuColor = '#ffff'
+const lightThemeMenuColor = '#000000'
 
 export const BurguerMenuStyled = styled.div<Props>`
     display: flex;
@@ -23,7 +27,9 @@ export const BurguerMenuStyled = styled.div<Props>`
         transition: all 0.5s ease-in-out;
         border: 1px solid #ffff;
         border-radius: 5px;
-        background-color: ${props => props.mouseIn ? '#001D66' : '#ffff'};
+        background-color: ${props => props.mouseIn ?
+         '#001D66' :
+         props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor};
     }
     
     .line01, .line03 {
