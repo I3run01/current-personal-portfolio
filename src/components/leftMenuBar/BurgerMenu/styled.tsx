@@ -25,11 +25,18 @@ export const BurguerMenuStyled = styled.div<Props>`
     .line01, .line02, .line03 {
         height: 4px;
         transition: all 0.5s ease-in-out;
-        border: 1px solid #ffff;
+        
+        border: 1px solid ${props => props.theme === 'dark' ?
+        darkThemeMenuColor :
+        lightThemeMenuColor
+        };
+
         border-radius: 5px;
+
         background-color: ${props => props.mouseIn ?
             '#001D66' :
-            props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor};
+            props.theme === 'dark' ? darkThemeMenuColor : lightThemeMenuColor
+        };
     }
     
     .line01, .line03 {
