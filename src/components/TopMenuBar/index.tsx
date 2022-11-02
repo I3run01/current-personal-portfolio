@@ -46,7 +46,11 @@ export const TopMenuBar = () => {
     return (
         <TopMenuBarStyled
         theme={state.theme.status}>
-            <img src="TopMenuBar/BrazilLogo.svg" alt="" className="languageBTN" onClick={changeLanguage}/>
+
+            { state.language.status === 'english' ?
+            <img src="TopMenuBar/UkLogo.svg" alt="" className="languageBTN" onClick={changeLanguage}/> : 
+            <img src="TopMenuBar/BrazilLogo.svg" alt="" className="languageBTN" onClick={changeLanguage}/>}
+
             {state.theme.status === 'dark' ?
             <img src="TopMenuBar/Sun.svg" alt="" className="themeBTN" onClick={changeTheme}/> :
             <img src="TopMenuBar/Moon.svg" alt="" className="themeBTN" onClick={changeTheme}/> }
