@@ -34,6 +34,10 @@ export const RightMenuBarStyled = styled.div<Props>`
                 transform: scale(80%);
             }
 
+            :hover {
+                filter: hue-rotate(-50deg) brightness(150%);
+            }
+
         }
     }
 
