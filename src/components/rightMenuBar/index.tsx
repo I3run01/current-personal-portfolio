@@ -6,7 +6,8 @@ import { CvIcon } from "./Icons/Icons"
 import { InstagramIcon } from "./Icons/Icons"
 import { TelegramIcon } from "./Icons/Icons"
 import { WhatsAppIcon } from "./Icons/Icons"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { Context } from "../../contexts/Context"
 
 export const RightMenuBar = () => {
     const [sideMenhOpenedOrClosed, setSideMenhOpenedOrClosed] = useState<string>('closed')
@@ -15,8 +16,11 @@ export const RightMenuBar = () => {
         sideMenhOpenedOrClosed === 'closed' ? setSideMenhOpenedOrClosed('opened') : setSideMenhOpenedOrClosed('closed')
     }
 
+    const {state, dispatch} = useContext(Context)
+
     return (
-        <RightMenuBarStyled>
+        <RightMenuBarStyled
+        theme={state.theme.status}>
             <IconRightMenuBar
             ftcion={closerOrOpenMenu}/>
             <div className={`container ${sideMenhOpenedOrClosed}`}>

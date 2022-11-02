@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const RightMenuBarStyled = styled.div`
+type Props = {
+    theme: string
+}
+
+export const RightMenuBarStyled = styled.div<Props>`
     .container {
         position: fixed;
         top: 0;
@@ -22,6 +26,8 @@ export const RightMenuBarStyled = styled.div`
             justify-content: space-between;
             width: 70px;
             height: 80%;
+
+            filter: ${props => props.theme === 'dark' ? 'invert(0)' : 'invert(1)'};
 
             a {
                 margin: auto;
