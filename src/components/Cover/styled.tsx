@@ -41,6 +41,22 @@ export const CoverStyled = styled.div`
         }
     }
 
+    @media screen and (min-width: 800px) {
+        #bkmain {
+            flex-direction: row;
+
+            #bk01 {
+                height: 100vh;
+                width: 50vw;
+            }
+
+            #bk02 {
+                height: 100vh;
+                width: 50vw;
+            }
+        }
+    }
+
     @media screen and (min-width: 1000px) {
         img {
             max-width: 800px;
