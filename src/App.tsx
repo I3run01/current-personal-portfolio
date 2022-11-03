@@ -16,10 +16,7 @@ function App() {
       <LeftMenuBar/>
       <RightMenuBar/>
       <TopMenuBar/>
-      <MainStyled>
-        <Cover/>
-      </MainStyled>
-      
+      <Cover/>
     </GlobalStyled>  
   )
 }
