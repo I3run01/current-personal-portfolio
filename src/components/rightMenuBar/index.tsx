@@ -6,7 +6,7 @@ import { CvIcon } from "./Icons/Icons"
 import { InstagramIcon } from "./Icons/Icons"
 import { TelegramIcon } from "./Icons/Icons"
 import { WhatsAppIcon } from "./Icons/Icons"
-import { useContext, useEffect, useState } from "react"
+import { useContext, useState } from "react"
 import { Context } from "../../contexts/Context"
 
 export const RightMenuBar = () => {
@@ -16,10 +16,6 @@ export const RightMenuBar = () => {
     const [curriculum, setCurriculum] = useState<string>( state.language.status === 'english' ? 
     'CV/CurrentCV_ENG.docx':
     'CV/CurriculoPTBR_Atual.docx')
-
-    useEffect(() => {
-        state.language.status === 'english' ? setCurriculum('CV/CurrentCV_ENG.docx') : setCurriculum('CV/CurriculoPTBR_Atual.docx')
-    }, [state.language.status])
 
     const closerOrOpenMenu = () => {
         sideMenhOpenedOrClosed === 'closed' ? setSideMenhOpenedOrClosed('opened') : setSideMenhOpenedOrClosed('closed')
