@@ -19,5 +19,5 @@
     Project - OK
 
 02-11-2022
-    Amplify Deploy - OK
-    Project - OK
+    Amplify Deploy - Ok
+    Project - Ok
