@@ -1,9 +1,11 @@
 import { GlobalStyled } from './globasStyles'
+import { MainStyled } from './globasStyles'
 import { LeftMenuBar } from './components/leftMenuBar'
 import { RightMenuBar } from './components/rightMenuBar/index'
 import { TopMenuBar } from './components/TopMenuBar'
 import { useContext } from 'react'
 import { Context } from './contexts/Context'
+import { Cover } from './components/Cover'
 
 
 function App() {
@@ -14,6 +16,10 @@ function App() {
       <LeftMenuBar/>
       <RightMenuBar/>
       <TopMenuBar/>
+      <MainStyled>
+        <Cover/>
+      </MainStyled>
+      
     </GlobalStyled>  
   )
 }
