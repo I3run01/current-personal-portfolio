@@ -32,11 +32,14 @@ export const RightMenuBarStyled = styled.div<Props>`
             a {
                 margin: auto;
                 transform: scale(80%);
+
+                :hover {
+                    //filter: 'hue-rotate(-50deg) brightness(150%)';
+                    filter: ${props => props.theme === 'dark' ? 'invert(0)' : 'invert(1)'} ;
+                }
             }
 
-            :hover {
-                filter: hue-rotate(-50deg) brightness(150%);
-            }
+            
 
         }
     }
