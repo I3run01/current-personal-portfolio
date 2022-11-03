@@ -27,8 +27,8 @@ export const CoverStyled = styled.div`
         width: 100vw;
 
         #bk01 {
-            height: 40vh;
-            width: 80vw;
+            height: 50vh;
+            width: 100vw;
             background: rgb(0,255,139);
             background: radial-gradient(circle, rgba(0,255,139,0.4) 10%, rgba(145,8,178,0.6) 30%, rgba(0,57,204,0) 60%);
         }
@@ -40,20 +40,6 @@ export const CoverStyled = styled.div`
             background: radial-gradient(circle, rgba(0,57,204,0.4) 10%, rgba(255,165,23,0.6) 30%, rgba(0,57,204,0) 60%);
         }
     }
-
-        #bk01 {
-            background-color: blue;
-            height: 40px;
-            width: 40px;
-        }
-        #bk02 {
-            background-color: red;
-            height: 40px;
-            width: 40px;
-        }
-    }
-
-    
 
     @media screen and (min-width: 1000px) {
         img {
