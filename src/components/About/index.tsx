@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Context } from "../../contexts/Context"
 import { AboutStyled } from "./styled"
 
@@ -10,6 +10,10 @@ export const About = () => {
 
     const {state, dispatch} = useContext(Context)
     const [mainText, setMainText] = useState<string>(state.language.status === 'english' ? mainTextEngish : mainTextPortuguese)
+
+    useEffect(() => {
+        state.language.status === 'english' ? setMainText(mainTextEngish) : setMainText(mainTextPortuguese)
+    }, [state.language.status])
 
     return (
         <AboutStyled
