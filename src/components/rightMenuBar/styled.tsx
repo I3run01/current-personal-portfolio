@@ -37,15 +37,52 @@ export const RightMenuBarStyled = styled.div<Props>`
                     filter: ${props => props.theme === 'dark' ? 'invert(0)' : 'invert(1)'} ;
                 }
             }
+        }
 
-            
-
+        .topLine, .bottomLine {
+            display: none;
+            position: fixed;
+            right: 31px;
+            z-index: -1;
+            width: 3px;
+            background-color: #7B7A99;
+        }
+        .topLine {
+            top: 0;
+            height: calc(100vh - 76%);
+        }
+        .bottomLine {
+            bottom: 0;
+            height: calc(100vh - 76%);
         }
     }
 
     //Animation
     .opened {
         width: 70px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        .container {
+            width: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .Icons {
+                height: 60%;
+            }
+
+            .topLine, .bottomLine {
+                display: block;
+            }
+        }
+
+        #IconRightMenuBar {
+            display: none;
+        }
+
+        
     }
 
 

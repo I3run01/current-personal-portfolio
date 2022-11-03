@@ -23,7 +23,8 @@ export const IconRightMenuBar = ({ftcion}:Props) => {
         onMouseEnter={()=>{setOnHover(true)}}
         onMouseLeave={()=>{setOnHover(false)}}
         onHover={onHover}
-        theme={state.theme.status}>
+        theme={state.theme.status}
+        id='IconRightMenuBar'>
             <div className={`line01 line01${menuStatus}`}></div>
             <div className={`line02 line02${menuStatus}`}></div>
         </IconRightMenuBarStyled>

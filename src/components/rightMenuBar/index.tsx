@@ -39,6 +39,8 @@ export const RightMenuBar = () => {
                     <a href={curriculum}><CvIcon/></a>
                     <a href="https://www.instagram.com/i3run01developer/" target="_black"><InstagramIcon/></a>
                 </div>
+                <div className="topLine"></div>
+                <div className="bottomLine"></div>
             </div>
         </RightMenuBarStyled>
     )
