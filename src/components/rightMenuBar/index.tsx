@@ -32,7 +32,7 @@ export const RightMenuBar = () => {
                     <a href="https://api.whatsapp.com/send?phone=5541995686185" target="_black"><WhatsAppIcon/></a>
                     <a href="https://www.linkedin.com/in/i3run01/" target="_black"><LinkedInIcon/></a>
                     <a href="https://github.com/I3run01" target="_black"><GitHubIcon/></a>
-                    <a href={curriculum} target="_black"><CvIcon/></a>
+                    <a href={curriculum}><CvIcon/></a>
                     <a href="https://www.instagram.com/i3run01developer/" target="_black"><InstagramIcon/></a>
                 </div>
             </div>
