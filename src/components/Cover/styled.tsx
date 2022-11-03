@@ -24,18 +24,19 @@ export const CoverStyled = styled.div`
         align-items: center;
 
         height: 100vh;
-        width: 100vw;
+        width: 100%;
+        overflow-x: hidden;
 
         #bk01 {
             height: 50vh;
-            width: 100vw;
+            width: 100%;
             background: rgb(0,255,139);
             background: radial-gradient(circle, rgba(0,255,139,0.4) 10%, rgba(145,8,178,0.6) 30%, rgba(0,57,204,0) 60%);
         }
 
         #bk02 {
             height: 50vh;
-            width: 100vw;
+            width: 100%;
             background: rgb(0,57,204);
             background: radial-gradient(circle, rgba(0,57,204,0.4) 10%, rgba(255,165,23,0.6) 30%, rgba(0,57,204,0) 60%);
         }
@@ -47,12 +48,12 @@ export const CoverStyled = styled.div`
 
             #bk01 {
                 height: 100vh;
-                width: 50vw;
+                width: 50%;
             }
 
             #bk02 {
                 height: 100vh;
-                width: 50vw;
+                width: 50%;
             }
         }
     }

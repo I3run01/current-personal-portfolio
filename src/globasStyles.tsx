@@ -10,8 +10,8 @@ const mobilePadding = '15px'
 
 export const GlobalStyled = styled.div<props>`
     background-color: ${props => props.theme === 'dark' ? darkColor :  lightColor};
-    height: 100vh;
     width: 100vw;
+    margin: auto;
 `
 export const MainStyled = styled.div`
     padding-left: ${mobilePadding};

@@ -6,6 +6,7 @@ import { TopMenuBar } from './components/TopMenuBar'
 import { useContext } from 'react'
 import { Context } from './contexts/Context'
 import { Cover } from './components/Cover'
+import { About } from './components/About'
 
 
 function App() {
