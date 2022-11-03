@@ -4,7 +4,7 @@ type Props = {
     theme: string
 }
 
-const titleDarkColor = '#fffff'
+const titleDarkColor = '#ffff'
 const titleLightColor = '#000000'
 
 export const AboutStyled = styled.div`
@@ -20,4 +20,13 @@ export const AboutStyled = styled.div`
     img {
         width: 100%;
     }
+
+    #text {
+        padding: 10px;
+        color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+        border: 4px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+        background-color: rgba(0, 57, 204, 20%);
+        text-align: center;
+    }
+
 `

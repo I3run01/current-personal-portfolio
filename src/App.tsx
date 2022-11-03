@@ -8,7 +8,6 @@ import { Context } from './contexts/Context'
 import { Cover } from './components/Cover'
 import { About } from './components/About'
 
-
 function App() {
   const {state, dispatch} = useContext(Context)
 
@@ -18,6 +17,9 @@ function App() {
       <RightMenuBar/>
       <TopMenuBar/>
       <Cover/>
+      <MainStyled>
+        <About/>
+      </MainStyled>
     </GlobalStyled>  
   )
 }
