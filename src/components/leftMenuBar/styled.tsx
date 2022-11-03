@@ -36,7 +36,7 @@ export const LeftMenuBarStyled = styled.div`
     }
 
     //animation
-        .closed {
-            width: 0px;
-        }
+    .closed {
+        width: 0px;
+    }
 `

@@ -22,6 +22,10 @@ export const Cover = () => {
     return (
         <CoverStyled>
             <img src={coverImage} alt="" />
+            <div id="bkmain">
+                <div id="bk01"></div>
+                <div id="bk02"></div>
+            </div>
         </CoverStyled>
     )
 }
