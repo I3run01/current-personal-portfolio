@@ -15,14 +15,9 @@ export const MainStyled = styled.div`
     padding-left: ${mobilePadding};
     padding-right: ${mobilePadding};
 
-    //background-color: red;
     margin: auto;
 
     @media screen and (min-width: 700px) {
         margin: auto 20vw auto 20vw;
-    }
-
-    @media screen and (min-width: 1000px) {
-        margin: auto 30vw auto 30vw;
     }
 `

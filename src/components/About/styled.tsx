@@ -34,4 +34,17 @@ export const AboutStyled = styled.div`
         }
     }
 
+    @media screen and (min-width: 1000px) {
+        img {
+            width: 40vw;
+        }
+
+        #text {
+            width: auto;
+            margin-left: 20vw;
+            
+        }
+        
+    }
+
 `
