@@ -9,17 +9,20 @@ export const About = () => {
     const mainTextPortuguese = 'Oi, fico feliz que esteja vendo o meu perfil, deixe me contar um pouco sobre mim. Me chamo Bruno e sou um desenvolvedor júnior full stack. Inicialmente eu me formei em engenharia civil mas depois de um tempo atuando na área de construção, percebi que não fazia mais sentido seguir a carreira de engenheiro, pois todas as ideias que eu tinha de projeto acabava esbarrando na programação, foi assim que optei por fazer uma transição de carreira, fico muito feliz por ter tomado esssa escolha. Estou sempre estudando novas técnologias, realizando trabalhos como freela e criando projetos cada vez mais complexos. Fique a vontade para ver o resto do perfil.'
 
     const {state, dispatch} = useContext(Context)
+    const [title, setTitle] = useState<string>(state.language.status === 'english' ? 'About' : 'Sobre')
     const [mainText, setMainText] = useState<string>(state.language.status === 'english' ? mainTextEngish : mainTextPortuguese)
 
     useEffect(() => {
         state.language.status === 'english' ? setMainText(mainTextEngish) : setMainText(mainTextPortuguese)
+        state.language.status === 'english' ? setTitle('About') : setTitle('Sobre')
+
     }, [state.language.status])
 
     return (
         <AboutStyled
         theme={state.theme.status}
         id='AboutIndex'>
-            <h1>About</h1>
+            <h1>{title}</h1>
             <img src="About/personalPhoto.png" alt="" />
             <div id="text">
                 <p>{mainText}</p>

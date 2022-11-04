@@ -7,6 +7,7 @@ import { useContext } from 'react'
 import { Context } from './contexts/Context'
 import { Cover } from './components/Cover'
 import { About } from './components/About'
+import { Experiences } from './components/Experiences'
 
 function App() {
   const {state, dispatch} = useContext(Context)
@@ -19,6 +20,7 @@ function App() {
       <Cover/>
       <MainStyled>
         <About/>
+        <Experiences/>
       </MainStyled>
     </GlobalStyled>  
   )
