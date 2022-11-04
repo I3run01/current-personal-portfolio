@@ -20,7 +20,8 @@ export const Cover = () => {
     }, [ ,state.theme.status, state.language.status])
 
     return (
-        <CoverStyled>
+        <CoverStyled
+        id="CoverIndex">
             <img src={coverImage} alt="" />
             <div id="bkmain">
                 <div id="bk01"></div>

@@ -21,8 +21,8 @@ export const LeftMenuBar = () =>{
         <LeftMenuBarStyled className={menuOpen}>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>    
-                <a href="#"> · {cover}</a>
-                <a href="#"> · {about}</a>
+                <a href="#CoverIndex"> · {cover}</a>
+                <a href="#AboutIndex"> · {about}</a>
                 <a href="#"> · {experience}</a>
                 <a href="#"> · {skills}</a>
                 <a href="#"> · {projects}</a>

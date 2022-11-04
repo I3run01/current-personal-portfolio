@@ -17,7 +17,8 @@ export const About = () => {
 
     return (
         <AboutStyled
-        theme={state.theme.status}>
+        theme={state.theme.status}
+        id='AboutIndex'>
             <h1>About</h1>
             <img src="About/personalPhoto.png" alt="" />
             <div id="text">

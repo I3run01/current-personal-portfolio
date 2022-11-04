@@ -42,8 +42,14 @@ export const AboutStyled = styled.div`
         #text {
             width: auto;
             margin-left: 20vw;
-            
+            margin-top: -40px;
+
+            p {
+                padding-top: 20px;
+            }
         }
+
+
         
     }
 
