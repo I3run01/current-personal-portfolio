@@ -19,9 +19,7 @@ export const About = () => {
         <AboutStyled
         theme={state.theme.status}>
             <h1>About</h1>
-            <img src={state.theme.status === 'dark' ? 
-            'About/personalDarkPhoto.svg' : 
-            'About/personalLightPhoto.svg'} alt="" />
+            <img src="About/personalPhoto.png" alt="" />
             <div id="text">
                 <p>{mainText}</p>
             </div>
