@@ -27,17 +27,12 @@ export const ExperiencesStyled = styled.div`
         margin: 0;
         display: flex;
 
-        background-color: lightblue;
-        :nth-child(even) {
-            background-color: lightgreen;
-        }
-
         #designContainer {
-
+            
             #circleSymbol {
-                width: 20px;
-                height: 20px;
-                background-color: red;
+                width: 25px;
+                height: 25px;
+                background-color: #001D66;
                 border-radius: 50%;
             }
 
@@ -45,7 +40,7 @@ export const ExperiencesStyled = styled.div`
                 width: 5px;
                 height: 100%;
                 margin: auto;
-                background-color: blue;
+                background-color: #001D66;
             }
         }
         
@@ -66,6 +61,16 @@ export const ExperiencesStyled = styled.div`
                 font-size: 16px;
                 font-family: 'Open Sans', sans-serif;
                 color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+            }
+        }
+
+        :last-child {
+            #circleSymbol {
+                filter: saturate(40%);
+            }
+
+            #lineSymble {
+                opacity: 0;
             }
         }
 
