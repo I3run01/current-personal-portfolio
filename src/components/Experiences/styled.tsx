@@ -22,26 +22,54 @@ export const ExperiencesStyled = styled.div`
     }
 
     #objectContainer {
+        padding-top: 20px;
+        padding-left: 30px;
+        margin: 0;
+        display: flex;
+
         background-color: lightblue;
         :nth-child(even) {
             background-color: lightgreen;
         }
-        margin: 0;
 
-        h2 {
-            font-size: 36px;
+        #designContainer {
+
+            #circleSymbol {
+                width: 20px;
+                height: 20px;
+                background-color: red;
+                border-radius: 50%;
+            }
+
+            #lineSymble {
+                width: 5px;
+                height: 100%;
+                margin: auto;
+                background-color: blue;
+            }
+        }
+        
+        #textContainer {
+            margin-left: 10px;
+            h2 {
+                margin: 0;
+                font-size: 36px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            p {
+                margin: 0;
+                line-height: 28px;
+                font-size: 16px;
+                font-family: 'Open Sans', sans-serif;
+                color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+            }
         }
 
-        h3 {
-            font-size: 24px;
-        }
-
-        p {
-            line-height: 28px;
-            font-size: 16px;
-            font-family: 'Open Sans', sans-serif;
-            color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
-        }
+        
     }
 
     

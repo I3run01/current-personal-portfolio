@@ -20,9 +20,16 @@ export const Experiences = () => {
                 expObjects.map((item, index)=> {
                     
                     return <div id="objectContainer">
-                        <h2>{state.language.status === 'english' ? item.start_eng : item.start_PTBR}</h2>
-                        <h3>{state.language.status === 'english' ? item.title_eng : item.title_PTBR}</h3>
-                        <p>{state.language.status === 'english' ? item.text_eng : item.text_PTBR}</p>
+                        <div id="designContainer">
+                            <div id="circleSymbol"></div>
+                            <div id="lineSymble"></div>   
+                        </div>
+                        <div id="textContainer">
+                            <h2>{state.language.status === 'english' ? item.start_eng : item.start_PTBR}</h2>
+                            <h3>{state.language.status === 'english' ? item.title_eng : item.title_PTBR}</h3>
+                            <p>{state.language.status === 'english' ? item.text_eng : item.text_PTBR}</p>
+                        </div>
+                        
                     </div>
                 })
             }            
