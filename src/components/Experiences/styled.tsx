@@ -23,7 +23,7 @@ export const ExperiencesStyled = styled.div`
 
     .objectContainer {
         h2 {
-        font-size: 36px;
+            font-size: 36px;
         }
 
         h3 {
