@@ -37,7 +37,7 @@ export class expClass {
     }
 }
 
-export const Objects = [
+export const expObjects = [
     new expClass(
         'Sept - 2021',
         'Start in Programming',
