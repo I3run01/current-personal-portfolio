@@ -10,6 +10,8 @@ const titleLightColor = '#000000'
 export const AboutStyled = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
 
+    min-height: 100vh;
+
     h1 {
         margin-left: 0;
         font-size: 48px;
