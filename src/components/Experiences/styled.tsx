@@ -21,19 +21,23 @@ export const ExperiencesStyled = styled.div`
         font-size: 48px;
     }
 
-    h2 {
+    .objectContainer {
+        h2 {
         font-size: 36px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            line-height: 28px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+        }
     }
 
-    h3 {
-        font-size: 24px;
-    }
-
-    p {
-        line-height: 28px;
-        font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
-        color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
-    }
+    
 
 `
