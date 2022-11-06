@@ -21,7 +21,13 @@ export const ExperiencesStyled = styled.div`
         font-size: 48px;
     }
 
-    .objectContainer {
+    #objectContainer {
+        background-color: lightblue;
+        :nth-child(even) {
+            background-color: lightgreen;
+        }
+        margin: 0;
+
         h2 {
             font-size: 36px;
         }
