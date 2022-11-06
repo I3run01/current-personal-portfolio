@@ -66,12 +66,15 @@ export const ExperiencesStyled = styled.div`
 
         :last-child {
             #circleSymbol {
-                background-color: red;
-                filter: saturate(40%);
+                filter: saturate(40);
             }
 
             #lineSymble {
                 opacity: 0;
+            }
+
+            h2 {
+                filter: hue-rotate(223) brightness(100) saturate(40);
             }
         }
 
