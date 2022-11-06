@@ -66,6 +66,7 @@ export const ExperiencesStyled = styled.div`
 
         :last-child {
             #circleSymbol {
+                background-color: red;
                 filter: saturate(40%);
             }
 
