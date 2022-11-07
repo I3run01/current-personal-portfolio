@@ -11,6 +11,7 @@ export const ScreenStyle = styled.div<Props>`
     width: 385px;
     background-color: red;
     border: 10px solid ${props => props.theme === 'dark' ? darkColor : lightColor};
+    border-radius: 40px;
 
     ::before {
         content: '';
