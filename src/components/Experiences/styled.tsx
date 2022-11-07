@@ -7,7 +7,7 @@ type Props = {
 const titleDarkColor = '#ffff'
 const titleLightColor = '#000000'
 
-export const ExperiencesStyled = styled.div`
+export const ExperiencesStyled = styled.div<Props>`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 

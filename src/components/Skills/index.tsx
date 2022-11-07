@@ -11,7 +11,8 @@ export const Skills = () => {
     }, [state.language.status])
 
     return (
-        <SkillsStyled>
+        <SkillsStyled
+        theme={state.theme.status}>
             <h1>{skills}</h1>
         </SkillsStyled>
     )
