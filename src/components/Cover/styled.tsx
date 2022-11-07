@@ -7,7 +7,6 @@ export const CoverStyled = styled.div`
     align-items: center;
 
     height: 100vh;
-
     margin-left: 15px;
     margin-right: 15px;
 
@@ -22,6 +21,7 @@ export const CoverStyled = styled.div`
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        top: 0;
 
         height: 100vh;
         width: 100%;

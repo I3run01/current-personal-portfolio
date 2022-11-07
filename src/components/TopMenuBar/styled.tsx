@@ -22,6 +22,7 @@ export const TopMenuBarStyled = styled.div<props>`
         margin: 0;
         filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
         
+        
         :hover {
             cursor: pointer;
             filter: brightness(100%) invert(0);
