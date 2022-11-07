@@ -32,12 +32,14 @@ export const ExperiencesStyled = styled.div`
         #designContainer {
             
             #circleSymbol {
+                z-index: +1;
                 width: 25px;
                 height: 25px;
                 border-radius: 50%;
             }
 
             #lineSymble {
+                z-index: +1;
                 width: 5px;
                 height: 100%;
                 margin: auto;
