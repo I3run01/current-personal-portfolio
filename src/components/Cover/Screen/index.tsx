@@ -6,7 +6,8 @@ export const Screen = () => {
     const {state, dispatch} = useContext(Context)
 
     return (
-        <ScreenStyle id="screen">
+        <ScreenStyle id="screen"
+        theme={state.theme.status}>
             
         </ScreenStyle>
     )
