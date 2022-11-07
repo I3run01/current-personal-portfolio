@@ -27,7 +27,8 @@ export const Experiences = () => {
 
     return (
         <ExperiencesStyled
-        theme={state.theme.status}>
+        theme={state.theme.status}
+        id='ExperiencesIndex'>
             <h1>{title}</h1>
             {
                 expObjects.map((item, index)=> {

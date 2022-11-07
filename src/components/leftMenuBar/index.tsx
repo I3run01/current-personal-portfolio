@@ -41,7 +41,7 @@ export const LeftMenuBar = () =>{
                 <BurguerMenu fction={handleMenuButton}/>    
                 <a href="#CoverIndex"> · {cover}</a>
                 <a href="#AboutIndex"> · {about}</a>
-                <a href="#"> · {Experiences}</a>
+                <a href="#ExperiencesIndex"> · {Experiences}</a>
                 <a href="#"> · {skills}</a>
                 <a href="#"> · {projects}</a>
             </div>
