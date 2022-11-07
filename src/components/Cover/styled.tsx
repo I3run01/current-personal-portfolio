@@ -59,13 +59,13 @@ export const CoverStyled = styled.div`
     }
 
     @media screen and (min-width: 1000px) {
-        img {
+        #screen {
             max-width: 800px;
         }
     }
 
     @media screen and (min-width: 1300px) {
-        img {
+        #screen {
             width: 1100px;
         }
     }
