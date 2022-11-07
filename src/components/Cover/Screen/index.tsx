@@ -8,7 +8,9 @@ export const Screen = () => {
     return (
         <ScreenStyle id="screen"
         theme={state.theme.status}>
-            
+            <div id="bkLeft"></div>
+            <div id="bkRight"></div>
+
         </ScreenStyle>
     )
 }
