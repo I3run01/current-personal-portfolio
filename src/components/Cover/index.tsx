@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { Context } from "../../contexts/Context"
 import { CoverStyled } from "./styled"
+import { Screen } from "./Screen"
 
 export const Cover = () => {
     const {state, dispatch} = useContext(Context)
@@ -22,6 +23,7 @@ export const Cover = () => {
     return (
         <CoverStyled
         id="CoverIndex">
+            <Screen/>
             <img src={coverImage} alt="" />
             <div id="bkmain">
                 <div id="bk01"></div>
