@@ -65,16 +65,8 @@ export const ExperiencesStyled = styled.div`
         }
 
         :last-child {
-            #circleSymbol {
-                filter: saturate(40);
-            }
-
             #lineSymble {
                 opacity: 0;
-            }
-
-            h2 {
-                filter: hue-rotate(223) brightness(100) saturate(40);
             }
         }
 
