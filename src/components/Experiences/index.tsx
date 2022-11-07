@@ -24,8 +24,10 @@ export const Experiences = () => {
                             <div id="circleSymbol"></div>
                             <div id="lineSymble"></div>   
                         </div>
-                        <div id="textContainer" style={{background: 'red'}}>
-                            <h2>{state.language.status === 'english' ? item.start_eng : item.start_PTBR}</h2>
+                        <div id="textContainer">
+                            <h2
+                            style={item.working_Now ? {color: '#001D66'} : {color: '00000'}}
+                            >{state.language.status === 'english' ? item.start_eng : item.start_PTBR}</h2>
                             <h3>{state.language.status === 'english' ? item.title_eng : item.title_PTBR}</h3>
                             <p>{state.language.status === 'english' ? item.text_eng : item.text_PTBR}</p>
                         </div>

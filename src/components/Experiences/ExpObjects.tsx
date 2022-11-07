@@ -35,6 +35,10 @@ export class expClass {
     public get text_PTBR () {
         return this.textPTBR
     }
+
+    public get working_Now () {
+        return this.workingNow
+    }
 }
 
 export const expObjects = [
