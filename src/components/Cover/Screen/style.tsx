@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
-export const ScreenStyle = styled.div`
+type Props = {
+    theme: string
+}
+
+const darkColor = '#ffff'
+const lightColor = '#000000'
+
+export const ScreenStyle = styled.div<Props>`
     width: 1087px;
     height: 501px;
     background-color: red;
-    bo
+    border: 10px solid ${props => props.theme === 'dark' ? darkColor : lightColor};
     
 `

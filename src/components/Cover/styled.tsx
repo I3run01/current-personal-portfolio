@@ -10,7 +10,7 @@ export const CoverStyled = styled.div`
     margin-left: 15px;
     margin-right: 15px;
 
-    img {
+    #screen {
         z-index: 1;
         width: 100%;
     }

@@ -1,9 +1,12 @@
+import { useContext } from "react"
+import { Context } from "../../../contexts/Context"
 import { ScreenStyle } from "./style"
 
 export const Screen = () => {
+    const {state, dispatch} = useContext(Context)
 
     return (
-        <ScreenStyle>
+        <ScreenStyle id="screen">
             
         </ScreenStyle>
     )
