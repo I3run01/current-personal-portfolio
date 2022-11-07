@@ -54,6 +54,7 @@ export const TopMenuBar = () => {
             {state.theme.status === 'dark' ?
             <img src="TopMenuBar/Sun.svg" alt="" className="themeBTN" onClick={changeTheme}/> :
             <img src="TopMenuBar/Moon.svg" alt="" className="themeBTN" onClick={changeTheme}/> }
+            <div id="empty"></div>
         </TopMenuBarStyled>
     )
 }
