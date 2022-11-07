@@ -9,6 +9,7 @@ export const Experiences = () => {
     const [title, setTitle] = useState<string>(state.language.status === 'english' ? 'Experiences' : 'Experiências')
     const [workingColorTheme, setWorkingColorTheme] = useState<string>(state.theme.status === 'dark' ? '#98B5FE' : '#0047FF')
     const [fontColor, setFontColor] = useState<string>(state.theme.status === 'dark' ? '#ffff' : '#000000')
+    const [circleColor, setCircleColor] = useState<string>(state.theme.status === 'dark' ? '#0047FF' : '#001D66')
 
 
     useEffect(() => {
@@ -19,16 +20,18 @@ export const Experiences = () => {
         if(state.theme.status === 'dark') {
             setWorkingColorTheme('#98B5FE')
             setFontColor('#ffff')
+            setCircleColor('#0047FF')
         } else {
             setWorkingColorTheme('#0047FF')
             setFontColor('#000000')
+            setCircleColor('#001D66')
         }
     }, [state.theme.status])
 
     return (
         <ExperiencesStyled
         theme={state.theme.status}
-        id='ExperiencesIndex'>
+        id='Experiences'>
             <h1>{title}</h1>
             {
                 expObjects.map((item, index)=> {
@@ -36,7 +39,7 @@ export const Experiences = () => {
                     return <div id="objectContainer">
                         <div id="designContainer">
                             <div id="circleSymbol"
-                            style={item.working_Now ? {background: workingColorTheme} : {background: '#001D66'}}
+                            style={item.working_Now ? {background: workingColorTheme} : {background: circleColor}}
                             ></div>
                             <div id="lineSymble"></div>   
                         </div>

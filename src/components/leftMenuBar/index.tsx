@@ -45,7 +45,7 @@ export const LeftMenuBar = () =>{
                 <a href="#"> · {skills}</a>
                 <a href="#"> · {projects}</a>
             </div>
-            
+            -
         </LeftMenuBarStyled>
     )
 }

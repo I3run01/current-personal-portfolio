@@ -34,7 +34,6 @@ export const ExperiencesStyled = styled.div`
             #circleSymbol {
                 width: 25px;
                 height: 25px;
-                background-color: #001D66;
                 border-radius: 50%;
             }
 
@@ -42,8 +41,7 @@ export const ExperiencesStyled = styled.div`
                 width: 5px;
                 height: 100%;
                 margin: auto;
-                background-color: #001D66;
-            }
+                background-color: ${props => props.theme === 'dark' ? '#0047FF' : '#001D66'};            }
         }
         
         #textContainer {
