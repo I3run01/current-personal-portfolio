@@ -9,7 +9,7 @@ export const Experiences = () => {
     const [title, setTitle] = useState<string>(state.language.status === 'english' ? 'Experiences' : 'Experiências')
     const [workingColorTheme, setWorkingColorTheme] = useState<string>(state.theme.status === 'dark' ? '#98B5FE' : '#0047FF')
     const [fontColor, setFontColor] = useState<string>(state.theme.status === 'dark' ? '#ffff' : '#000000')
-    const [circleColor, setCircleColor] = useState<string>(state.theme.status === 'dark' ? '#0047FF' : '#001D66')
+    const [circleColor, setCircleColor] = useState<string>(state.theme.status === 'dark' ? '#2348a8' : '#001D66')
 
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export const Experiences = () => {
         if(state.theme.status === 'dark') {
             setWorkingColorTheme('#98B5FE')
             setFontColor('#ffff')
-            setCircleColor('#0047FF')
+            setCircleColor('#2348a8')
         } else {
             setWorkingColorTheme('#0047FF')
             setFontColor('#000000')

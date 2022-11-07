@@ -41,7 +41,7 @@ export const ExperiencesStyled = styled.div`
                 width: 5px;
                 height: 100%;
                 margin: auto;
-                background-color: ${props => props.theme === 'dark' ? '#0047FF' : '#001D66'};            }
+                background-color: ${props => props.theme === 'dark' ? '#2348a8' : '#001D66'};            }
         }
         
         #textContainer {
