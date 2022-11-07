@@ -8,9 +8,15 @@ const darkColor = '#ffff'
 const lightColor = '#000000'
 
 export const ScreenStyle = styled.div<Props>`
-    width: 1087px;
-    height: 501px;
+    width: 385px;
     background-color: red;
     border: 10px solid ${props => props.theme === 'dark' ? darkColor : lightColor};
+
+    ::before {
+        content: '';
+        height: 0;
+        float: left;
+        padding-bottom: 46%;
+    }
     
 `
