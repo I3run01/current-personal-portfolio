@@ -81,7 +81,7 @@ export const SkillsStyled = styled.div<Props>`
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                     backdrop-filter: blur(7.2px);
                     -webkit-backdrop-filter: blur(7.2px);
-                    border: 3px solid rgba(0, 0, 0, 0.34);
+                    border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
 
                     padding: 10px;
 
