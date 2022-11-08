@@ -37,7 +37,9 @@ export const SkillsStyled = styled.div<Props>`
 
                 :hover {
                     cursor: pointer;
-                    border: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
+                    border-top: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
+                    border-bottom: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
+                    border-left: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
                     background-color: rgba(123, 122, 153, 0.4);
                 }
 
