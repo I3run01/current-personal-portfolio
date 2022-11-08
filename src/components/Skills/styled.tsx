@@ -13,10 +13,18 @@ export const SkillsStyled = styled.div`
 
     margin-top: 100px;
 
-    h1 {
+    h1, h2 {
         font-family: 'Dosis', sans-serif;
         color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+        
+    }
+
+    h1 {
         font-size: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
     #container {
@@ -26,9 +34,11 @@ export const SkillsStyled = styled.div`
 
             #logos {
                 display: flex;
-
                 min-height: 100px;
-
+                
+                :hover {
+                    cursor: pointer;
+                }
                 
                 img {
                     width: 40px;
