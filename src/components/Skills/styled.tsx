@@ -7,7 +7,7 @@ type Props = {
 const titleDarkColor = '#ffff'
 const titleLightColor = '#000000'
 
-export const SkillsStyled = styled.div`
+export const SkillsStyled = styled.div<Props>`
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
@@ -38,12 +38,16 @@ export const SkillsStyled = styled.div`
                 
                 :hover {
                     cursor: pointer;
+                    border: 1px solid white;
+                    background-color: rgba(123, 122, 153, 0.4)
+
+                    
                 }
                 
                 img {
                     width: 40px;
                     margin: 15px;
-
+                    filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
 
                 }
 
