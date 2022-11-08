@@ -18,5 +18,37 @@ export const SkillsStyled = styled.div`
         color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
         font-size: 48px;
     }
+
+    #container {
+        display: flex;
+
+        #leftDiv {
+
+            #logos {
+                display: flex;
+
+                min-height: 100px;
+
+                
+                img {
+                    width: 40px;
+                    margin: 15px;
+
+
+                }
+
+                h2 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        #rightDiv {
+            background-color: red;
+            padding: 20px;
+        }
+    }
     
 `
