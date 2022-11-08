@@ -15,8 +15,7 @@ export const SkillsStyled = styled.div<Props>`
 
     h1, h2 {
         font-family: 'Dosis', sans-serif;
-        color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
-        
+        color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor}; 
     }
 
     h1 {
