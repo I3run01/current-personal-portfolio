@@ -12,7 +12,6 @@ export const Skills = () => {
         state.language.status === 'english' ? setSkills('Skills') : setSkills('Habilidades')
     }, [state.language.status])
 
-
     return (
         <SkillsStyled
         theme={state.theme.status}>
@@ -26,6 +25,11 @@ export const Skills = () => {
                             >
                                 <img src={item.image} alt=""/>
                                 <h2>{item.name}</h2>
+
+                                <div 
+                                id='paragraph'>
+                                    <p>{state.language.status === 'english' ? item.textEng : item.textPTBR}</p>
+                                </div>
                             </div>
                         )
                     })}
