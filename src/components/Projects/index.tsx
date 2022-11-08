@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react'
 import { Context } from '../../contexts/Context'
 import { ProjectsStyles } from './styled'
+import { ProjectsType } from './projectClass/objects'
 
 export const Projects = () => {
     const {state, dispatch} = useContext(Context)
@@ -14,10 +15,18 @@ export const Projects = () => {
         <ProjectsStyles
         theme={state.theme.status}>
             <h1>{projects}</h1>
-            <div id='landingPages'></div>
-            <div id='automations'></div>
-            <div id='challenges'></div>
-            <div id='sitesWithDataBase'></div>
+            {
+                ProjectsType.map((item, index) => {
+                    return (
+                        <a>
+                            <div id='projectsTypes'>
+                                <img src={item.image} alt="" />
+                                <h2>{state.language.status === 'english' ? item.nameEng : item.namePTBR}</h2>
+                            </div>
+                        </a>
+                    )
+                })
+            }
         </ProjectsStyles>
     )
 }

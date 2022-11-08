@@ -1,36 +1,46 @@
 class projectsTypes {
     private projectImage: string
-    private projectName:string
+    private projectNameEng:string
+    private projectNamePTBR:string
 
-    constructor(image: string, name: string) {
+    constructor(image: string, nameEng: string, namePTBR: string) {
         this.projectImage = image
-        this.projectName = name
+        this.projectNameEng = nameEng
+        this.projectNamePTBR = namePTBR
     }
 
     public get image() {
         return this.projectImage
     }
 
-    public get name() {
-        return this.projectName
+    public get nameEng() {
+        return this.projectNameEng
+    }
+
+    public get namePTBR() {
+        return this.projectNamePTBR
     }
 }
 
 export const ProjectsType = [
     new projectsTypes(
+        'ProjectsType/landingPages.svg',
         'Landing pages',
-        'ProjectsType/landingPages.svg'
+        'Landing pages',
     ),
     new projectsTypes(
+        'ProjectsType/automations.svg',
         'Automations',
-        'ProjectsType/automations.svg'
+        'Automações',
     ),
     new projectsTypes(
+        'ProjectsType/challenges.svg',
         'Challenges',
-        'ProjectsType/challenges.svg'
+        'Desafios',
     ),
     new projectsTypes(
-        'projects with Database',
-        'ProjectsType/projectsWithDatabase.svg'
+        'ProjectsType/projectsWithDatabase.svg',
+        'Projects with Database',
+        'Projetos com banco de dados',
     ),
 ]

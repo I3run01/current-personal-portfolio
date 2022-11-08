@@ -20,16 +20,10 @@ export const ProjectsStyles = styled.div`
         color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor}; 
     }
 
-
-    div {
+    #projectsTypes {
         width: 100%;
-        height: 300px;
-        
-        background-color: red;
-        :nth-child(even) {
-            background-color: blue;
-        }
     }
+    
 
 
 
