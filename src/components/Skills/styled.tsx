@@ -28,40 +28,36 @@ export const SkillsStyled = styled.div<Props>`
     }
 
     #container {
-        display: flex;
-
-        #leftDiv {
-
             #logos {
                 display: flex;
                 min-height: 100px;
-                
+                width: 300px;
+
                 :hover {
                     cursor: pointer;
                     border: 1px solid white;
                     background-color: rgba(123, 122, 153, 0.4)
+                }
 
-                    
+                :hover img {
+                    filter: brightness(100%) invert(0);
+                }
+
+                :hover h2 {
+                    color: ${props => props.theme === 'dark' ? '#98B5FE' : 'rgba(0, 14, 51, 1)'};
                 }
                 
                 img {
                     width: 40px;
                     margin: 15px;
                     filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
-
                 }
 
                 h2 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                }
-            }
-        }
-
-        #rightDiv {
-            background-color: red;
-            padding: 20px;
+                } 
         }
     }
     
