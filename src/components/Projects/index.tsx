@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import { Context } from '../../contexts/Context'
 import { ProjectsStyles } from './styled'
 import { ProjectsType } from './projectClass/objects'
+import { Link } from 'react-router-dom'
 
 export const Projects = () => {
     const {state, dispatch} = useContext(Context)
@@ -18,12 +19,12 @@ export const Projects = () => {
             {
                 ProjectsType.map((item, index) => {
                     return (
-                        <a>
+                        <Link to={'#'}>
                             <div id='projectsTypes'>
                                 <h2>{state.language.status === 'english' ? item.nameEng : item.namePTBR}</h2>
                                 <img src={item.image} alt="" />
                             </div>
-                        </a>
+                        </Link>
                     )
                 })
             }
