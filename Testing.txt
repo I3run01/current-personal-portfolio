@@ -41,3 +41,7 @@
 08-11-2022
     Amplify Deploy - Ok
     Project - Ok
+
+09-11-2022
+    Amplify Deploy - Ok
+    Project - Ok
