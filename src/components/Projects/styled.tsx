@@ -23,18 +23,27 @@ export const ProjectsStyles = styled.div`
         font-size: 48px;
     }
 
-    h2 {
-        font-size: 24px;
-        z-index: +1;
-        background-color: purple;
-    }
+    
 
     #projectsTypes {
         position: relative;
 
-        width: 100%;
+        width: 90%;
+        margin: auto;
         overflow: hidden;
-        border: 2px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+        transition: all 0.5s ease-in-out;
+
+        :hover {
+            cursor: pointer;
+            filter:  saturate(10%) brightness(90%);
+            backdrop-filter: blur(6px);
+            width: 100%;
+            z-index: +2;
+        }
+
+        :hover h2 {
+            scale: 100%;
+        }
 
         ::before {
             content: '';
@@ -48,9 +57,33 @@ export const ProjectsStyles = styled.div`
             top: 0;
             left: 0;
             z-index: 0;
-            opacity: 0;
         }
 
+        h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-80%);
+            font-size: 24px;
+            z-index: +1;
+            scale: 0%;
+            transition: all 0.5s ease-in-out;
+            color: #ffffff;
+        }
+
+        
+
+    }
+
+    @media screen and (min-width: 700px) {
+        #projectsTypes{
+            width: 100%;
+
+            :hover {
+                width: 100%;
+                scale: 110%;
+            }
+        }
     }
     
 

@@ -20,8 +20,8 @@ export const Projects = () => {
                     return (
                         <a>
                             <div id='projectsTypes'>
-                                <img src={item.image} alt="" />
                                 <h2>{state.language.status === 'english' ? item.nameEng : item.namePTBR}</h2>
+                                <img src={item.image} alt="" />
                             </div>
                         </a>
                     )
