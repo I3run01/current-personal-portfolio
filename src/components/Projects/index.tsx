@@ -19,7 +19,7 @@ export const Projects = () => {
             {
                 ProjectsType.map((item, index) => {
                     return (
-                        <Link to={'#'}>
+                        <Link to={item.routes}>
                             <div id='projectsTypes'>
                                 <h2>{state.language.status === 'english' ? item.nameEng : item.namePTBR}</h2>
                                 <img src={item.image} alt="" />
