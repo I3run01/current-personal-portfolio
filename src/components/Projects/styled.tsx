@@ -57,6 +57,7 @@ export const ProjectsStyles = styled.div<Props>`
             top: 0;
             left: 0;
             z-index: 0;
+            
         }
 
         h2 {
@@ -82,6 +83,10 @@ export const ProjectsStyles = styled.div<Props>`
             :hover {
                 width: 100%;
                 scale: 110%;
+            }
+
+            ::before {
+                padding-bottom: 27%;
             }
         }
     }
