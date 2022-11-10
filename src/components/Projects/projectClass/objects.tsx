@@ -2,11 +2,13 @@ class projectsTypes {
     private projectImage: string
     private projectNameEng:string
     private projectNamePTBR:string
+    private projectRoutes:string
 
-    constructor(image: string, nameEng: string, namePTBR: string) {
+    constructor(image: string, nameEng: string, namePTBR: string, route: string) {
         this.projectImage = image
         this.projectNameEng = nameEng
         this.projectNamePTBR = namePTBR
+        this.projectRoutes = route
     }
 
     public get image() {
@@ -20,6 +22,10 @@ class projectsTypes {
     public get namePTBR() {
         return this.projectNamePTBR
     }
+
+    public get routes() {
+        return this.projectRoutes
+    }
 }
 
 export const ProjectsType = [
@@ -27,20 +33,24 @@ export const ProjectsType = [
         'ProjectsType/landingPages.svg',
         'Landing pages',
         'Landing pages',
+        '/landingPages'
     ),
     new projectsTypes(
         'ProjectsType/automations.svg',
         'Automations',
         'Automações',
+        '/automations'
     ),
     new projectsTypes(
         'ProjectsType/challenges.svg',
         'Challenges',
         'Desafios',
+        '/challenges'
     ),
     new projectsTypes(
-        'ProjectsType/projectsWithDatabase.svg',
+        'ProjectsType/challenges.svg',
         'Projects with Database',
         'Projetos com banco de dados',
+        '/challenges'
     ),
 ]
