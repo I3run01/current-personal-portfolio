@@ -48,7 +48,7 @@ export const ProjectsType = [
         '/challenges'
     ),
     new projectsTypes(
-        'ProjectsType/challenges.svg',
+        'ProjectsType/projectsWithDatabase.svg',
         'Projects with Database',
         'Projetos com banco de dados',
         '/challenges'
