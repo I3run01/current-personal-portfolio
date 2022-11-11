@@ -40,4 +40,36 @@ export class projectDetailsClass {
         this.projectGallary = gallary
 
     }
+
+    public get titlePTBR() {
+        return this.projectTitlePTBR
+    }
+
+    public get titleENG() {
+        return this.projectTitleENG
+    }
+
+    public get textPTBR() {
+        return this.projectTextPTBR
+    }
+
+    public get textENG() {
+        return this.projectTextENG
+    }
+
+    public get imageCape() {
+        return this.projectImageCape
+    }
+
+    public get externalLinks() {
+        return this.projectExternalLinks
+    }
+
+    public get gallary() {
+        return this.projectGallary
+    }
+
+
+
+    
 }
