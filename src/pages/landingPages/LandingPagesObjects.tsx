@@ -35,6 +35,5 @@ export const landingPages = [
                 textPTBR: 'Essa parte do site mostra as habilidades que tenho'
              },
         ]
-
-    )
+    ),
 ]
