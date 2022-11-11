@@ -31,7 +31,8 @@ export const ProjectsStyles = styled.div<Props>`
         width: 90%;
         margin: auto;
         overflow: hidden;
-        transition: all 0.5s ease-in-out;
+        transition: width 0.5s ease-in-out;
+        transition: scale 0.5s ease-in-out;
 
         :hover {
             cursor: pointer;
