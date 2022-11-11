@@ -1,8 +1,10 @@
+import {ProjectsDetails} from '../components/ProjectsDetails'
+
 export const LandingPages = () => {
 
     return (
-        <div>
+        <ProjectsDetails>
             <h2>Landing Page</h2>
-        </div>
+        </ProjectsDetails>
     )
 }
