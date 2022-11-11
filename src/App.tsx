@@ -11,8 +11,7 @@ function App() {
   const {state, dispatch} = useContext(Context)
 
   return (
-    <GlobalStyled theme={state.theme.status as string}>
-      
+    <GlobalStyled theme={state.theme.status as string}> 
       <RightMenuBar/>
       <TopMenuBar/>
       <MainRoutes/>

@@ -1,9 +1,12 @@
 import { ProjectsDetailsStyles } from './styled'
+import { MainStyled } from '../../globasStyles'
 
 export const ProjectsDetails = () => {
     return (
-        <ProjectsDetailsStyles>
-            
-        </ProjectsDetailsStyles>
+        <MainStyled>
+            <ProjectsDetailsStyles>
+                
+            </ProjectsDetailsStyles>
+        </MainStyled>
     )
 }

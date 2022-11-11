@@ -68,8 +68,5 @@ export class projectDetailsClass {
     public get gallary() {
         return this.projectGallary
     }
-
-
-
-    
+ 
 }
