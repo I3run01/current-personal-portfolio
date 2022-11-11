@@ -1,7 +1,13 @@
-type externalLinks = {
+type externalLinksType = {
     icons: string
-        name:string
-        link:string
+    name:string
+    link:string
+}[]
+
+type gallaryType = {
+    image: string
+    textPTBR: string
+    textENG:string
 }[]
 
 export class projectDetailsClass {
@@ -10,16 +16,8 @@ export class projectDetailsClass {
     private projectTextPTBR: string
     private projectTextENG: string
     private projectImageCape: string     
-    private externalLinks: {
-        icons: string
-        name:string
-        link:string
-    }[]
-    gallary: {
-        image: string
-        textPTBR: string
-        textENG:string
-    }[]
+    private projectExternalLinks: externalLinksType
+    private projectGallary: gallaryType
 
     constructor
     (
@@ -28,7 +26,8 @@ export class projectDetailsClass {
         textPTBR:string,
         textENG:string,
         imageCape:string,
-        externalLinks:externalLinks,
+        externalLinks:externalLinksType,
+        gallary:gallaryType,
 
     ) 
     {
@@ -37,7 +36,8 @@ export class projectDetailsClass {
         this.projectTextPTBR = textPTBR
         this.projectTextENG = textENG
         this.projectImageCape = imageCape
-        this.externalLinks = externalLinks
+        this.projectExternalLinks = externalLinks
+        this.projectGallary = gallary
 
     }
 }
