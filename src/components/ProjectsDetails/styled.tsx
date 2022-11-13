@@ -47,6 +47,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
             #leftBottomDiv {
                 width: 40%;
+
+                .Icons {
+                    background-color: blue;
+                }
             }
 
             #rightBottomDiv {

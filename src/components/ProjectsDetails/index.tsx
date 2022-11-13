@@ -50,14 +50,14 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                 <div id='leftBottomDiv'>
                                     {item.externalLinks.map((subitem, index)=> {
                                         return (
-                                            <a href={subitem.link}>
-                                                <img src={subitem.icons} alt="" className='Icons'/>
-                                                <h3 className='textIcons'>{subitem.name}</h3>
+                                            <a href={subitem.link} className='Icons'>
+                                                <img src={subitem.icons} alt="" />
+                                                <h3>{subitem.name}</h3>
                                             </a>
                                         )
                                     })}
-                                    <div>
-                                        <img src='Icons/Gallary.svg' alt="" className='Icons'/>
+                                    <div className='Icons'>
+                                        <img src='Icons/Gallary.svg' alt="" />
                                         <h3>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h3>
                                     </div>
                                 </div>
