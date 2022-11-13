@@ -32,6 +32,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 -webkit-box-shadow: 9px 13px 20px -4px rgba(0,0,0,0.54);
                 -moz-box-shadow: 9px 13px 20px -4px rgba(0,0,0,0.54);
                 box-shadow: 9px 13px 20px -4px rgba(0,0,0,0.54);
+                z-index: 1;
             }
 
             h2 {
@@ -44,20 +45,23 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
         #bottomDiv {
             display: flex;
-            flex-direction: row;
+            margin-top: -60px;
 
             #leftBottomDiv {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                background-color: blue;
+
+                .emptyDiv {
+                    height: 80px;
+                }
 
                 .Icons {
                     display: flex;
                     justify-content: space-between;
-                    margin: 20px;
-                    width: 100%;
-                    padding: 10px;
+                    padding: 20px;
+                    width: 150px;
+
                     
                     cursor: pointer;             
 
@@ -72,27 +76,27 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                         font-size: 16px;
                     }
                     
-
-
-
                 }
             }
 
             #rightBottomDiv {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                background-color: red;
+                background-color: rgba(0, 71, 255, 0.2);
+
+                border: 4px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+                border-radius: 10px;
 
                 p {
-                    margin: 0;
                     line-height: 28px;
                     font-size: 16px;
                     font-family: 'Open Sans', sans-serif;
                     color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     text-align: center;
-
                     width: 80%;
+                    
                 }
             }
         }

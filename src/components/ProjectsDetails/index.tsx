@@ -48,6 +48,9 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                             
                             {<div id='bottomDiv'>
                                 <div id='leftBottomDiv'>
+                                    <div className='emptyDiv'>
+
+                                    </div>
                                     {item.externalLinks.map((subitem, index)=> {
                                         return (
                                             <a href={subitem.link} className='Icons' target='_blank'>
@@ -62,13 +65,11 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                     </div>
                                 </div>
                                 <div id='rightBottomDiv'>
-                                    <div>
                                     <p >
                                         {
                                             state.language.status === 'english' ? item.textENG : item.textPTBR
                                         }
                                     </p>
-                                    </div>
                                 </div>
                             </div>}
                         </div>
