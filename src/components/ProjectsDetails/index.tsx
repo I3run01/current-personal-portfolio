@@ -50,7 +50,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                 <div id='leftBottomDiv'>
                                     {item.externalLinks.map((subitem, index)=> {
                                         return (
-                                            <a href={subitem.link} className='Icons'>
+                                            <a href={subitem.link} className='Icons' target='_blank'>
                                                 <img src={subitem.icons} alt="" />
                                                 <h3>{subitem.name}</h3>
                                             </a>

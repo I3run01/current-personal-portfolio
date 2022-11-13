@@ -46,10 +46,32 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             display: flex;
 
             #leftBottomDiv {
-                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                width: 30%;
 
                 .Icons {
-                    background-color: blue;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px;
+                    width: 100%;
+                    cursor: pointer;
+
+                    img {
+                        width: 60px;
+                    }
+
+                    h3 {
+                        font-family: 'Dosis', sans-serif;
+                        color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+                        font-size: 16px;
+                    }
+                    
+
+
+
                 }
             }
 
