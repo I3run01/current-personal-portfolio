@@ -43,7 +43,28 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         }
 
         #bottomDiv {
+            display: flex;
 
+            #leftBottomDiv {
+                width: 40%;
+            }
+
+            #rightBottomDiv {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    margin: 0;
+                    line-height: 28px;
+                    font-size: 16px;
+                    font-family: 'Open Sans', sans-serif;
+                    color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+                    text-align: center;
+
+                    width: 80%;
+                }
+            }
         }
     }
 
