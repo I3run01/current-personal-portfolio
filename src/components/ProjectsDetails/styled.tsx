@@ -18,6 +18,13 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
         filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
 
+        
+        :hover {
+            filter: brightness(100%) invert(0) 
+            saturate(${props => props.theme === 'dark' ? 100 : 20});
+        }
+        
+
     }
     
     h1, h2 {
