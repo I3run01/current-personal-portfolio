@@ -2,7 +2,6 @@ import { ProjectsDetailsStyles } from './styled'
 import { MainStyled } from '../../globasStyles'
 import { useContext } from 'react'
 import { Context } from '../../contexts/Context'
-import { projectDetailsClass } from './ProjectDetailsClass/ProjectDetailsClass'
 
 type externalLinksType = {
     icons: string
