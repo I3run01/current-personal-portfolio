@@ -42,8 +42,8 @@ export const LeftMenuBar = () =>{
                 <a href="#CoverIndex"> · {cover}</a>
                 <a href="#AboutIndex"> · {about}</a>
                 <a href="#ExperiencesIndex"> · {Experiences}</a>
-                <a href="#"> · {skills}</a>
-                <a href="#"> · {projects}</a>
+                <a href="#skillsIndex"> · {skills}</a>
+                <a href="#projectsIndex"> · {projects}</a>
             </div>
             -
         </LeftMenuBarStyled>

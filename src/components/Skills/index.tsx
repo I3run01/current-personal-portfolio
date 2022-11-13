@@ -14,7 +14,8 @@ export const Skills = () => {
 
     return (
         <SkillsStyled
-        theme={state.theme.status}>
+        theme={state.theme.status}
+        id='skillsIndex' >
             <h1>{skills}</h1>
 
             <div id="container">

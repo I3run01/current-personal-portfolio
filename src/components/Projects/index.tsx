@@ -14,7 +14,8 @@ export const Projects = () => {
 
     return (
         <ProjectsStyles
-        theme={state.theme.status}>
+        theme={state.theme.status}
+        id='projectsIndex'>
             <h1>{projects}</h1>
             {
                 ProjectsType.map((item, index) => {
