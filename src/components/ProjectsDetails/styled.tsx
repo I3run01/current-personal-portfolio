@@ -79,12 +79,19 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                     justify-content: space-between;
                     padding: 20px;
                     width: 150px;
-
                     
                     cursor: pointer;             
 
                     img {
                         width: 60px;
+
+                        filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
+
+                        :hover {
+                            filter: brightness(100%) invert(0)
+                            saturate(${props => props.theme === 'dark' ? 
+                            80 : 50});
+                        }
 
                     }
 

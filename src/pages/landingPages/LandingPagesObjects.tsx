@@ -10,12 +10,12 @@ export const landingPages = [
         'ProjectsDetails/landingPages/Cape.png',
         [
             {
-                icons: 'Icons/GitHub.png',
+                icons: 'Icons/GitHub.svg',
                 name: 'GitHub',
                 link: 'https://github.com/I3run01/Portfolio-Project-V-1.0'
             },
             {
-                icons: 'Icons/Deploy.png',
+                icons: 'Icons/Deploy.svg',
                 name: 'Deploy',
                 link: 'https://i3run01portfolio.netlify.app/'
             }
