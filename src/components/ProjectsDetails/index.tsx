@@ -2,6 +2,7 @@ import { ProjectsDetailsStyles } from './styled'
 import { MainStyled } from '../../globasStyles'
 import { useContext } from 'react'
 import { Context } from '../../contexts/Context'
+import { Link } from 'react-router-dom'
 
 type externalLinksType = {
     icons: string
@@ -37,6 +38,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
         <MainStyled>
             <ProjectsDetailsStyles
             theme={state.theme.status}>
+                <Link to="/"><img src="Icons/backButton.svg" alt="" className='backButton'/></Link>
                 <h1>{state.language.status === 'english' ? categoryENG : categoryPTBR}</h1>
                 {projects.map((item, index)=>{
                     return (

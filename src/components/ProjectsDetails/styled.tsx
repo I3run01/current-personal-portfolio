@@ -8,6 +8,17 @@ const titleDarkColor = '#ffff'
 const titleLightColor = '#000000'
 
 export const ProjectsDetailsStyles = styled.div<Props>`
+
+    .backButton {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+        width: 40px;
+
+        filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
+
+    }
     
     h1, h2 {
         font-family: 'Dosis', sans-serif;
