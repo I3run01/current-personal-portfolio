@@ -13,6 +13,11 @@ export const landingPages = [
                 icons: 'Icons/GitHub.png',
                 name: 'GitHub',
                 link: 'https://github.com/I3run01/Portfolio-Project-V-1.0'
+            },
+            {
+                icons: 'Icons/Deploy.png',
+                name: 'Deploy',
+                link: 'https://i3run01portfolio.netlify.app/'
             }
         ],
         [
