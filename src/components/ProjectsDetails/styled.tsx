@@ -35,6 +35,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 text-align: center;
             }
         }
+
+        #bottomDiv {
+            
+        }
     }
 
 
