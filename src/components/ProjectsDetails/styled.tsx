@@ -89,7 +89,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                     }
 
                     :hover h3 {
-                        color: ${props => props.theme === 'dark' ? '#0047FF' : '97B4FF'};
+                        color: ${props => props.theme === 'dark' ? '#97B4FF' : '#0047FF'};
                     }
 
                     img {
