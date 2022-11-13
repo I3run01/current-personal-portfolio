@@ -62,11 +62,13 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                     </div>
                                 </div>
                                 <div id='rightBottomDiv'>
+                                    <div>
                                     <p >
                                         {
                                             state.language.status === 'english' ? item.textENG : item.textPTBR
                                         }
                                     </p>
+                                    </div>
                                 </div>
                             </div>}
                         </div>

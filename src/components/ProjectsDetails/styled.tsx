@@ -44,23 +44,26 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
         #bottomDiv {
             display: flex;
+            flex-direction: row;
 
             #leftBottomDiv {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-
-                width: 30%;
+                background-color: blue;
 
                 .Icons {
                     display: flex;
                     justify-content: space-between;
                     margin: 20px;
                     width: 100%;
-                    cursor: pointer;
+                    padding: 10px;
+                    
+                    cursor: pointer;             
 
                     img {
                         width: 60px;
+
                     }
 
                     h3 {
@@ -79,6 +82,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-color: red;
 
                 p {
                     margin: 0;
