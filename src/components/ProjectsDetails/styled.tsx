@@ -28,16 +28,22 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 width: 70%;
                 border: 4px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                 border-radius: 10px;
+                //box shadows
+                -webkit-box-shadow: 9px 13px 20px -4px rgba(0,0,0,0.54);
+                -moz-box-shadow: 9px 13px 20px -4px rgba(0,0,0,0.54);
+                box-shadow: 9px 13px 20px -4px rgba(0,0,0,0.54);
             }
 
             h2 {
+                padding-left: 10%;
                 font-size: 24px;
                 text-align: center;
+                filter: drop-shadow(1px 1px 5px #000);
             }
         }
 
         #bottomDiv {
-            
+
         }
     }
 
