@@ -35,7 +35,8 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
 
     return (
         <MainStyled>
-            <ProjectsDetailsStyles>
+            <ProjectsDetailsStyles
+            theme={state.theme.status}>
                 <h1>{state.language.status === 'english' ? categoryENG : categoryPTBR}</h1>
                 {projects.map((item, index)=>{
                     return (
@@ -44,7 +45,8 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                 <img src={item.imageCape} alt="" />
                                 <h2>{state.language.status === 'english' ? item.titleENG : item.titlePTBR}</h2>
                             </div>
-                            <div id='bottomDiv'>
+                            
+                            {<div id='bottomDiv'>
                                 <div id='leftBottomDiv'>
                                     {item.externalLinks.map((subitem, index)=> {
                                         return (
@@ -66,7 +68,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                         }
                                     </p>
                                 </div>
-                            </div>
+                            </div>}
                         </div>
                     )
                 })}
