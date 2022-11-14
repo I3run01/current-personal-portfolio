@@ -30,25 +30,25 @@ class projectsTypes {
 
 export const ProjectsType = [
     new projectsTypes(
-        'ProjectsType/landingPages.svg',
+        'ProjectsType/landingPages.png',
         'Landing pages',
         'Landing pages',
         '/landingPages'
     ),
     new projectsTypes(
-        'ProjectsType/automations.svg',
+        'ProjectsType/automations.png',
         'Automations',
         'Automações',
         '/automations'
     ),
     new projectsTypes(
-        'ProjectsType/challenges.svg',
+        'ProjectsType/challenges.png',
         'Challenges',
         'Desafios',
         '/challenges'
     ),
     new projectsTypes(
-        'ProjectsType/projectsWithDatabase.svg',
+        'ProjectsType/projectsWithDatabase.png',
         'Projects with Database',
         'Projetos com banco de dados',
         '/challenges'
