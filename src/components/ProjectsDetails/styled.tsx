@@ -33,6 +33,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
         margin-top: 0;
         padding-top: 100px;
+        text-align: center;
     }
 
     h1 {
@@ -115,6 +116,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             }
 
             #rightBottomDiv {
+                width: 100%;
+
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -152,6 +155,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 display: flex;
                 flex-direction: row;
                 margin-top: -20px;
+
+                #rightBottomDiv {
+                    width: auto;
+                }
 
                 #leftBottomDiv {
                     flex-direction: column;
