@@ -8,6 +8,7 @@ const titleDarkColor = '#ffff'
 const titleLightColor = '#000000'
 
 export const ProjectsDetailsStyles = styled.div<Props>`
+    min-height: 100vh;
 
     .backButton {
         position: fixed;
@@ -41,9 +42,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
     #container {
         #topDiv {
             display: flex;
+            flex-direction: column-reverse;
 
             img {
-                width: 70%;
+                width: 100%;
                 border: 4px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                 border-radius: 10px;
                 //box shadows
@@ -63,7 +65,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
         #bottomDiv {
             display: flex;
-            margin-top: -60px;
+            flex-direction: column-reverse;
 
             #leftBottomDiv {
                 display: flex;
@@ -130,6 +132,29 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                     
                 }
             }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        #container {
+            #topDiv {
+                display: flex;
+                flex-direction: row;
+                
+                img {
+                    width: 70%;
+                }
+            }
+
+            #bottomDiv {
+                display: flex;
+                flex-direction: row;
+                margin-top: -60px;
+            }
+
+
+
+            
         }
     }
 
