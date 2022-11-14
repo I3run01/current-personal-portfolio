@@ -45,7 +45,9 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         <div id='container'>
                             <div id='topDiv'>
                                 <img src={item.imageCape} alt="" />
-                                <h2>{state.language.status === 'english' ? item.titleENG : item.titlePTBR}</h2>
+                                <div>
+                                    <h2>{state.language.status === 'english' ? item.titleENG : item.titlePTBR}</h2>
+                                </div>
                             </div>
                             
                             {<div id='bottomDiv'>

@@ -57,7 +57,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             }
 
             h2 {
-                padding-left: 10%;
+                padding: 0;
                 font-size: 24px;
                 text-align: center;
                 filter: drop-shadow(1px 1px 5px #000);
@@ -145,6 +145,11 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             #topDiv {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                h2 {
+                    vertical-align: middle;
+                }
                 
                 img {
                     width: 70%;
