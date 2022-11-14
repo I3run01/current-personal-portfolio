@@ -66,14 +66,16 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         #bottomDiv {
             display: flex;
             flex-direction: column-reverse;
+            margin-top: 40px;
 
             #leftBottomDiv {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
 
                 .emptyDiv {
-                    height: 80px;
+                    height: 0px;
                 }
 
                 .Icons {
@@ -135,7 +137,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         }
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 700px) {
         #container {
             #topDiv {
                 display: flex;
@@ -149,8 +151,20 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             #bottomDiv {
                 display: flex;
                 flex-direction: row;
-                margin-top: -60px;
+                margin-top: -20px;
+
+                #leftBottomDiv {
+                    flex-direction: column;
+                    justify-content: space-between;
+                
+                    .emptyDiv {
+                        height: 40px;
+                    }
+                
+                }
             }
+
+            
 
 
 
