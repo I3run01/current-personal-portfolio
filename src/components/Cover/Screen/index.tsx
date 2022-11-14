@@ -10,7 +10,7 @@ export const Screen = () => {
         theme={state.theme.status}>
             <div id="bkLeft"></div>
             <div id="bkRight"></div>
-            <img src="/Cover/photo.svg" alt="" />
+            <img src="/Cover/photo.png" alt="" />
         </ScreenStyle>
     )
 }
