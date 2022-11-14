@@ -140,6 +140,17 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         }
     }
 
+    .gallary {
+        position: fixed;
+        bottom: 20px;
+        left: 40px;
+
+        height: 20px;
+        width: 20px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
     @media screen and (min-width: 700px) {
         #container {
             #topDiv {

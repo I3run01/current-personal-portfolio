@@ -1,6 +1,6 @@
 import { ProjectsDetailsStyles } from './styled'
 import { MainStyled } from '../../globasStyles'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { Context } from '../../contexts/Context'
 import { Link } from 'react-router-dom'
 
@@ -34,6 +34,13 @@ type Props = {
 export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => {
     const {state, dispatch} = useContext(Context)
 
+    const [gallary, setGallaryStatus] = useState<string>('gallaryHidden')
+
+    const changeGallaryStatus = () => {
+        gallary === 'gallaryHidden' ? setGallaryStatus('gallaryShowed') : setGallaryStatus('gallaryHidden')
+        alert(gallary)
+    }
+
     return (
         <MainStyled>
             <ProjectsDetailsStyles
@@ -63,7 +70,8 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                             </a>
                                         )
                                     })}
-                                    <div className='Icons'>
+                                    <div className='Icons'
+                                    onClick={changeGallaryStatus}>
                                         <img src='Icons/Gallary.svg' alt="" />
                                         <h3>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h3>
                                     </div>
@@ -79,6 +87,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         </div>
                     )
                 })}
+                <div className='gallary'></div>
             </ProjectsDetailsStyles>
         </MainStyled>
     )
