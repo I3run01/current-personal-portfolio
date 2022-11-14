@@ -142,13 +142,25 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallary {
         position: fixed;
-        bottom: 20px;
-        left: 40px;
+        top: 50vh;
+        left: 50vw;
+        transform: skewX(50%);
 
         height: 20px;
         width: 20px;
         background-color: red;
         border-radius: 50%;
+
+        z-index: +1;
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    .gallaryShowed {
+        scale: 10000%;
+        opacity: 100%;
+        
+    
     }
 
     @media screen and (min-width: 700px) {

@@ -38,7 +38,6 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
 
     const changeGallaryStatus = () => {
         gallary === 'gallaryHidden' ? setGallaryStatus('gallaryShowed') : setGallaryStatus('gallaryHidden')
-        alert(gallary)
     }
 
     return (
@@ -87,7 +86,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         </div>
                     )
                 })}
-                <div className='gallary'></div>
+                <div className={`gallary ${gallary}`}></div>
             </ProjectsDetailsStyles>
         </MainStyled>
     )
