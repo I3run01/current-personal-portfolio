@@ -240,6 +240,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                     top: 0px;
                     left:0px;
                     height: 100%;
+                    width: 100%;
 
                     display: flex;
                     justify-content: center;
@@ -361,7 +362,6 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                     width: 40%;
 
                     #paragrath {
-                        width: 100%;
 
                         p {
                             padding: 50px;
