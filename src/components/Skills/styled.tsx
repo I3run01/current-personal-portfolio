@@ -12,6 +12,7 @@ export const SkillsStyled = styled.div<Props>`
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
     margin-top: 100px;
+    margin-bottom: 200px;
 
     h1, h2 {
         font-family: 'Dosis', sans-serif;
@@ -33,14 +34,11 @@ export const SkillsStyled = styled.div<Props>`
                 min-height: 100px;
                 width: 200px;
                 
-                border: 1px solid  rgba(0, 0, 0, 0);
                 transition: border 0.2s ease-in-out;
 
                 :hover {
                     cursor: pointer;
-                    border-top: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
-                    border-bottom: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
-                    border-left: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
+
                 }
 
                 :hover img {
@@ -52,7 +50,7 @@ export const SkillsStyled = styled.div<Props>`
                 }
 
                 :hover #paragraph {
-                    display: block;
+                    scale: 100%;
                 }
 
                 img {
@@ -70,13 +68,13 @@ export const SkillsStyled = styled.div<Props>`
                 #paragraph {
                     z-index: +1;
                     position: absolute;
-                    display: none;
                     top: 0;
                     left: 70px;
                     width: calc(100vw - 150px);
                     max-height: 500px;
                     overflow-y: auto;
                     cursor: default;
+                    scale: 0%;
 
                     /* From https://css.glass */
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -85,7 +83,7 @@ export const SkillsStyled = styled.div<Props>`
                     border: 1px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     padding: 10px;
 
-                    transition: border 0.2s ease-in-out;
+                    transition: all 0.5s ease-in-out;
 
                     p {
                         font-size: 16px;
