@@ -44,7 +44,9 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
         <MainStyled>
             <ProjectsDetailsStyles
             theme={state.theme.status}>
+
                 <Link to="/"><img src="Icons/backButton.svg" alt="" className='backButton'/></Link>
+
                 <h1>{state.language.status === 'english' ? categoryENG : categoryPTBR}</h1>
                 {projects.map((item, index)=>{
                     return (
@@ -86,7 +88,10 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         </div>
                     )
                 })}
-                <div className={`gallary ${gallary}`}></div>
+
+                <div className={`gallary ${gallary}`}>
+                    <div id='gallaryDiv'></div>
+                </div>
             </ProjectsDetailsStyles>
         </MainStyled>
     )

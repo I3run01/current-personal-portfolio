@@ -143,8 +143,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallary {
         position: fixed;
-        top: 50vh;
-        left: 50vw;
+        bottom: 20px;
+        left: 20px;
         transform: skewX(50%);
 
         height: 20px;
@@ -155,10 +155,19 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         z-index: +1;
 
         transition: all 0.5s ease-in-out;
+
+        #gallaryDiv {
+            position: absolute;
+            top: 10px;
+            left: 10xp;
+
+            height: 500px;
+            width: 100px;
+        }
     }
 
     .gallaryShowed {
-        scale: 10000%;
+        scale: 100000%;
         opacity: 100%;
         
     
