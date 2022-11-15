@@ -95,8 +95,23 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
 
                 <div className={`gallary ${gallary}`}>
                     <h1>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h1>
+                    <h2>{state.language.status === 'english' ? projects[indexGallary].titleENG : projects[indexGallary].titlePTBR}</h2>
+                    <div id='seeAllProject'>
+
+                        <div id='seeAllProjectIcon'>
+                            <img src="Icons/seeAllProjectsIcon.svg" alt="" />
+                        </div>
+
+                        <div id='seeAllProjectText'
+                        onClick={() => {changeGallaryStatus(0)}}>
+                            <h3>
+                                {state.language.status === 'english' ? 'See all Project' : 'Ver todos os projetos'}
+                            </h3>
+                        </div>
+                    </div>
 
                     <div id='imagesContainer'>
+
                         {
                             projects[indexGallary].gallary.map((item, index)=>{
                                 return (
@@ -110,7 +125,6 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                 </div>
 
                 <div className={`gallaryBK ${gallaryOverflow}`}>
-
                 </div>
             </ProjectsDetailsStyles>
         </MainStyled>

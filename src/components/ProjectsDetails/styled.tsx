@@ -145,27 +145,92 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         top: 15vh;
         left: 10vw;
 
-        height: 80vh;
+        height: 75vh;
         width: 80vw;
         opacity: 0%;
         background-color: ${props => props.theme === 'dark' ? '#01001A' : '#E3E3E3'};
 
         z-index: -1;
         transition: all 0.5s ease-in-out;
+        border: 2px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+
+        -webkit-box-shadow: 9px 10px 32px -13px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 10px 32px -13px rgba(0,0,0,0.75);
+        box-shadow: 9px 10px 32px -13px rgba(0,0,0,0.75);
 
         overflow-y: scroll;
+
+        h1, h2 {
+            text-align: start;
+            margin-left: 5vw;
+        }
+
+        h2 {
+            text-align: start;
+            padding-top: 10px;
+        }
+
+        #seeAllProject {
+            display: flex;
+
+            :hover {
+                cursor: pointer;
+
+                img {
+                    filter: brightness(100%) invert(0)
+                    saturate(${props => props.theme === 'dark' ? 50 : 20}) ;
+                }
+
+                h3 {
+                    color: ${props => props.theme === 'dark' ? '#97B4FF' : '#0047FF'};
+                }
+            }
+
+            h3 {
+                font-family: 'Dosis', sans-serif;
+                font-size: 16px;
+                margin-left: 20px;
+                color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+            }
+
+            img {
+                margin-left: 5vw;
+                width: 40px;
+                filter: brightness(0) 
+                invert(${props => props.theme === 'dark' ? 1 : 0});
+            }
+        }
 
         #imagesContainer {
             display: flex;
             flex-direction: column;
+            flex-wrap: nowrap;
             align-items: center;
+            justify-content: center;
             margin: auto;
-
+            
             #images {
+                position: relative;
                 margin-top: 20px;
 
+                display: flex;
+                justify-content: center;
+
+                :hover {
+                    cursor: pointer;
+                }
+
+                :hover img {
+                    filter:  saturate(10%) brightness(90%);
+                    backdrop-filter: blur(6px);
+                }
+
                 img {
-                    width: 100%;
+                    border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
+                    width: 90%;
+                    transition: all 0.5s ease-in-out;
+
+                    
                 }
             }
 
@@ -180,8 +245,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallaryBK {
         position: fixed;
-        bottom: 10px;
-        left: 10px;
+        bottom: -10px;
+        left: -10px;
 
         height: 20px;
         width: 20px;
@@ -197,9 +262,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
-
-
         z-index: 2;
+
 
     }
 
@@ -248,6 +312,28 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
 
             
+        }
+
+        .gallary {
+
+            h1, h2 {
+                margin-left: 10vw;
+            }
+
+            #seeAllProject {
+                img {
+                    margin-left: 10vw;
+                }
+            }
+
+            #imagesContainer {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                #images {
+                    width: 40%;
+                }
+            }
         }
     }
 

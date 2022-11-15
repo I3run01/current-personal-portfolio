@@ -3,8 +3,8 @@ import {projectDetailsClass} from '../../components/ProjectsDetails/ProjectDetai
 export const landingPages = [
     new projectDetailsClass
     (
-        'Classic Portfolio',
         'Portifólio classico',
+        'Classic Portfolio',
         "Realizei esse projeto em React.JS, nesse projeto eu aprendi a fazer animações com CSS, trabalhei com variáveis globais (ContextAPI) e componentes",
         " I did this project with React.JS, I used ContextAPI to work with global variables, I also worked with components and CSS animations.",
         'ProjectsDetails/landingPages/Cape.png',
