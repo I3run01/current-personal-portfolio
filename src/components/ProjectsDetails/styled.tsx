@@ -134,8 +134,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                     font-family: 'Open Sans', sans-serif;
                     color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     text-align: center;
-                    width: 80%;
-                    
+                    width: 80%; 
                 }
             }
         }
@@ -143,34 +142,34 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallary {
         position: fixed;
-        bottom: 20px;
-        left: 20px;
-        transform: skewX(50%);
+        top: 0px;
+        left: 0vw;
 
-        height: 20px;
-        width: 20px;
-        background-color: red;
-        border-radius: 50%;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0%;
+        background-color: ${props => props.theme === 'dark' ? '#01001A' : '#E3E3E3'};
 
-        z-index: +1;
-
+        z-index: -1;
         transition: all 0.5s ease-in-out;
 
-        #gallaryDiv {
-            position: absolute;
-            top: 10px;
-            left: 10xp;
+        overflow-y: scroll;
 
-            height: 500px;
-            width: 100px;
-        }
+        #imagesContainer {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+
+            img {
+                margin-top: 20px;
+                width: 90%;
+            }
+        } 
     }
 
     .gallaryShowed {
-        scale: 100000%;
         opacity: 100%;
-        
-    
+        z-index: 1;
     }
 
     @media screen and (min-width: 700px) {

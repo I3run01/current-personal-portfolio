@@ -35,9 +35,11 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
     const {state, dispatch} = useContext(Context)
 
     const [gallary, setGallaryStatus] = useState<string>('gallaryHidden')
+    const [indexGallary, setIndexGallary] = useState<number>(0)
 
-    const changeGallaryStatus = () => {
+    const changeGallaryStatus = (index: number) => {
         gallary === 'gallaryHidden' ? setGallaryStatus('gallaryShowed') : setGallaryStatus('gallaryHidden')
+        setIndexGallary(index)
     }
 
     return (
@@ -72,7 +74,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                         )
                                     })}
                                     <div className='Icons'
-                                    onClick={changeGallaryStatus}>
+                                    onClick={() => {changeGallaryStatus(index)}}>
                                         <img src='Icons/Gallary.svg' alt="" />
                                         <h3>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h3>
                                     </div>
@@ -90,7 +92,17 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                 })}
 
                 <div className={`gallary ${gallary}`}>
-                    <div id='gallaryDiv'></div>
+                    <h1>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h1>
+
+                    <div id='imagesContainer'>
+                        {
+                            projects[indexGallary].gallary.map((item, index)=>{
+                                return (
+                                    <img src={item.image} alt="" />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </ProjectsDetailsStyles>
         </MainStyled>
