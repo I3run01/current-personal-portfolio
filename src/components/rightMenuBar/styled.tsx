@@ -28,14 +28,15 @@ export const RightMenuBarStyled = styled.div<Props>`
             width: 70px;
             height: 80%;
 
-            filter: ${props => props.theme === 'dark' ? 'invert(0)' : 'invert(1)'};
+            
 
             a {
                 margin: auto;
                 transform: scale(80%);
+                filter: brightness(0) invert(${props => props.theme === 'dark' ? 1 : 0});
 
                 :hover {
-                    filter: ${props => props.theme === 'dark' ? 'invert(0)' : 'invert(1)'} ;
+                    filter: brightness(100%);
                 }
             }
         }
