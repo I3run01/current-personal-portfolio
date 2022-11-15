@@ -22,7 +22,9 @@ export const Screen = () => {
                 </span>
             </h2>
             <h1 id="title">
-                Bruno A.V <br/> Por<span id="letterT">T</span><span>F</span>ólio
+                Bruno A.V <br/> 
+                Por<span id="letterT">T</span><span>F</span>
+                {state.language.status === 'english' ? 'olio' : 'ólio'}
             </h1>
         </ScreenStyle>
     )
