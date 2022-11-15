@@ -23,8 +23,6 @@ export const ProjectsStyles = styled.div<Props>`
         font-size: 48px;
     }
 
-    
-
     #projectsTypes {
         position: relative;
 
@@ -71,9 +69,6 @@ export const ProjectsStyles = styled.div<Props>`
             transition: all 0.5s ease-in-out;
             color: #ffffff;
         }
-
-        
-
     }
 
     @media screen and (min-width: 700px) {
