@@ -70,6 +70,7 @@ export const SkillsStyled = styled.div<Props>`
                     position: absolute;
                     top: 0;
                     left: 70px;
+                    transform: skewY(-50%);
                     width: calc(100vw - 150px);
                     max-height: 550px;
                     overflow-y: auto;
