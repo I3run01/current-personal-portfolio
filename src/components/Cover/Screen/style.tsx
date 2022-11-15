@@ -8,6 +8,9 @@ const darkColor = '#ffff'
 const lightColor = '#000000'
 
 export const ScreenStyle = styled.div<Props>`
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
+
     display: flex;
     position: relative;
     z-index: 1;
@@ -25,7 +28,30 @@ export const ScreenStyle = styled.div<Props>`
         transform: translateX(-50%);
         position: absolute;
         height: 105%;
-        left: 50%;
+        left: 60%;
+        z-index: 2;
+    }
+
+    #subtitle {
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        font-size: 24px;
+        font-family: 'Dosis', sans-serif;
+        z-index: 1;
+
+        span {
+            color: '#001D66';
+        }
+    }
+
+    #title {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        font-size: 48px;
+        font-family: 'Dosis', sans-serif;
+        z-index: 1;
     }
 
     ::before {
