@@ -42,6 +42,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     #container {
         #topDiv {
+            margin-top: 100px;
             display: flex;
             flex-direction: column-reverse;
 
