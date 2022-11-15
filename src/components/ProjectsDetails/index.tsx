@@ -117,13 +117,17 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                 return (
                                     <div id='images'>
                                         <img src={item.image} alt="" />
+                                        <div id='paragrath'>
+                                            <p>
+                                                {state.language.status === 'english' ? item.textENG : item.textPTBR}
+                                            </p>
+                                        </div>
                                     </div>
                                 )
                             })
                         }
                     </div>
                 </div>
-
                 <div className={`gallaryBK ${gallaryOverflow}`}>
                 </div>
             </ProjectsDetailsStyles>

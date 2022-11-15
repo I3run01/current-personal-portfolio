@@ -221,15 +221,42 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 }
 
                 :hover img {
-                    filter:  saturate(10%) brightness(90%);
+                    filter:  saturate(10%) brightness(50%);
                     backdrop-filter: blur(6px);
+                }
+
+                :hover #paragrath {
+                    opacity: 100%;
                 }
 
                 img {
                     border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     width: 90%;
+                    transition: all 0.5s ease-in-out;  
+                }
+
+                #paragrath {
+                    position: absolute;
+                    top: 0px;
+                    left:0px;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    opacity: 0;
                     transition: all 0.5s ease-in-out;
 
+                    p {
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-family: 'Open Sans', sans-serif;
+                        color: #ffffff;
+                        text-align: center;
+                        overflow: hidden;
+                        font-weight: bolder;
+                    }
                     
                 }
             }
@@ -332,7 +359,17 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
                 #images {
                     width: 40%;
+
+                    #paragrath {
+                        width: 100%;
+
+                        p {
+                            padding: 50px;
+                        }
+                    }
+
                 }
+
             }
         }
     }
