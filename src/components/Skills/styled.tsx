@@ -32,7 +32,8 @@ export const SkillsStyled = styled.div<Props>`
                 position: relative;
                 min-height: 100px;
                 width: 200px;
-
+                
+                border: 1px solid  rgba(0, 0, 0, 0);
 
                 :hover {
                     cursor: pointer;
