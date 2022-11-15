@@ -34,13 +34,13 @@ export const SkillsStyled = styled.div<Props>`
                 width: 200px;
                 
                 border: 1px solid  rgba(0, 0, 0, 0);
+                transition: border 0.2s ease-in-out;
 
                 :hover {
                     cursor: pointer;
                     border-top: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
                     border-bottom: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
                     border-left: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
-                    background-color: rgba(123, 122, 153, 0.4);
                 }
 
                 :hover img {
@@ -74,18 +74,18 @@ export const SkillsStyled = styled.div<Props>`
                     top: 0;
                     left: 70px;
                     width: calc(100vw - 150px);
-                    height: 300px;
+                    max-height: 500px;
                     overflow-y: auto;
                     cursor: default;
 
                     /* From https://css.glass */
-                    background: rgba(123, 122, 153, 0.4);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                     backdrop-filter: blur(7.2px);
                     -webkit-backdrop-filter: blur(7.2px);
-                    border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
-
+                    border: 1px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     padding: 10px;
+
+                    transition: border 0.2s ease-in-out;
 
                     p {
                         font-size: 16px;
