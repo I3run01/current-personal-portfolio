@@ -35,10 +35,12 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
     const {state, dispatch} = useContext(Context)
 
     const [gallary, setGallaryStatus] = useState<string>('gallaryHidden')
+    const [gallaryOverflow, setGallaryOverflow] = useState<string>('gallaryBKOff')
     const [indexGallary, setIndexGallary] = useState<number>(0)
 
     const changeGallaryStatus = (index: number) => {
         gallary === 'gallaryHidden' ? setGallaryStatus('gallaryShowed') : setGallaryStatus('gallaryHidden')
+        gallaryOverflow === 'gallaryBKOff' ? setGallaryOverflow('gallaryBKOn') : setGallaryOverflow('gallaryBKOff')
         setIndexGallary(index)
     }
 
@@ -98,11 +100,17 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         {
                             projects[indexGallary].gallary.map((item, index)=>{
                                 return (
-                                    <img src={item.image} alt="" />
+                                    <div id='images'>
+                                        <img src={item.image} alt="" />
+                                    </div>
                                 )
                             })
                         }
                     </div>
+                </div>
+
+                <div className={`gallaryBK ${gallaryOverflow}`}>
+
                 </div>
             </ProjectsDetailsStyles>
         </MainStyled>

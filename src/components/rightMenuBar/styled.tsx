@@ -11,7 +11,7 @@ export const RightMenuBarStyled = styled.div<Props>`
         right: 0;
         height: 100vh;
         width: 0px;
-        z-index: +3;
+        z-index: 20;
 
         transition: all 0.5s ease-in-out;
         

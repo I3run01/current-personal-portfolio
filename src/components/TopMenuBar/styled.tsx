@@ -7,7 +7,7 @@ type props = {
 export const TopMenuBarStyled = styled.div<props>`
     position: fixed;
     top: 0;
-    z-index: +2;
+    z-index: +10;
 
     display: flex;
     flex-direction: row;

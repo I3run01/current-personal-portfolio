@@ -142,11 +142,11 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallary {
         position: fixed;
-        top: 0px;
-        left: 0vw;
+        top: 15vh;
+        left: 10vw;
 
-        height: 100vh;
-        width: 100vw;
+        height: 80vh;
+        width: 80vw;
         opacity: 0%;
         background-color: ${props => props.theme === 'dark' ? '#01001A' : '#E3E3E3'};
 
@@ -158,18 +158,53 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         #imagesContainer {
             display: flex;
             flex-direction: column;
+            align-items: center;
             margin: auto;
 
-            img {
+            #images {
                 margin-top: 20px;
-                width: 90%;
+
+                img {
+                    width: 100%;
+                }
             }
+
+            
         } 
     }
 
     .gallaryShowed {
         opacity: 100%;
-        z-index: 1;
+        z-index: 3;
+    }
+
+    .gallaryBK {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+
+        height: 20px;
+        width: 20px;
+
+        border-radius: 50%;
+        backdrop-filter: blur(7px);
+        transition: all 0.5s ease-in-out;
+
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+        z-index: 2;
+
+    }
+
+    .gallaryBKOn {
+        scale: 100000%;
     }
 
     @media screen and (min-width: 700px) {
