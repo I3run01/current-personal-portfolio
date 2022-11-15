@@ -32,26 +32,32 @@ export const ScreenStyle = styled.div<Props>`
         z-index: 2;
     }
 
-    #subtitle {
+    #subtitle, #title {
         position: absolute;
-        top: 40px;
-        left: 10px;
-        font-size: 24px;
         font-family: 'Dosis', sans-serif;
         z-index: 1;
+        color: #ffffff;
+        filter: drop-shadow(1px 1px 4px #000000);
 
         span {
-            color: '#001D66';
+            color: #001D66;
         }
     }
 
+    #subtitle {
+        top: 20%;
+        left: 3%;
+        font-size: 16px;
+    }
+
     #title {
-        position: absolute;
-        top: 60px;
-        left: 10px;
-        font-size: 48px;
-        font-family: 'Dosis', sans-serif;
-        z-index: 1;
+        top: 30%;
+        left: 3%;
+        font-size: 24px;
+        
+        #letterT {
+            margin-right: -10px;
+        }
     }
 
     ::before {
@@ -81,6 +87,34 @@ export const ScreenStyle = styled.div<Props>`
         background: rgb(0,71,255);
         background: linear-gradient(135deg, rgba(0,71,255,0.6) 0%, rgba(217,140,20,6) 100%);
         opacity: 80%;
+    }
+
+    @media screen and (min-width: 500px) {
+        #subtitle {
+            top: 20%;
+            left: 3%;
+            font-size: 20px;
+        }
+
+        #title {
+            top: 30%;
+            left: 3%;
+            font-size: 32px;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        #subtitle {
+            top: 20%;
+            left: 3%;
+            font-size: 24px;
+        }
+
+        #title {
+            top: 25%;
+            left: 3%;
+            font-size: 48px;
+        }
     }
     
 `
