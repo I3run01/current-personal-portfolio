@@ -14,7 +14,7 @@ export const IconRightMenuBarStyled = styled.div<props>`
     bottom: 12px;
     height: 50px;
     width: 50px;
-    z-index: +4;
+    z-index: 30;
     cursor: pointer;
 
     .line01, .line02 {

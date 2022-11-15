@@ -11,7 +11,7 @@ export const LeftMenuBarStyled = styled.div`
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 4;
+        z-index: 20;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
