@@ -71,7 +71,7 @@ export const SkillsStyled = styled.div<Props>`
                     top: 0;
                     left: 70px;
                     width: calc(100vw - 150px);
-                    max-height: 500px;
+                    max-height: 550px;
                     overflow-y: auto;
                     cursor: default;
                     scale: 0%;
