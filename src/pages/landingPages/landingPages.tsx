@@ -1,5 +1,5 @@
 import {ProjectsDetails} from '../../components/ProjectsDetails'
-import { landingPages } from './LandingPagesObjects'
+import { landingPages } from './Objects/LandingPagesObjects'
 
 export const LandingPages = () => {
 

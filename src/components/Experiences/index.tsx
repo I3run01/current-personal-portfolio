@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { Context } from "../../contexts/Context"
 import { ExperiencesStyled } from "./styled"
-import { expObjects } from "./ExpObjects"
+import { expObjects } from "./Classes/ExpObjects"
 
 export const Experiences = () => {
     const {state, dispatch} = useContext(Context)

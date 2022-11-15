@@ -1,4 +1,4 @@
-import {projectDetailsClass} from '../../components/ProjectsDetails/ProjectDetailsClass/ProjectDetailsClass'
+import {projectDetailsClass} from '../../../components/ProjectsDetails/ProjectDetailsClass/ProjectDetailsClass'
 
 export const landingPages = [
     new projectDetailsClass
