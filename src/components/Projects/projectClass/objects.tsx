@@ -51,6 +51,6 @@ export const ProjectsType = [
         'ProjectsType/projectsWithDatabase.png',
         'Projects with Database',
         'Projetos com banco de dados',
-        '/challenges'
+        '/projectsWithDataBase'
     ),
 ]

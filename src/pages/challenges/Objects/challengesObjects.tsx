@@ -1,6 +1,6 @@
 import {projectDetailsClass} from '../../../components/ProjectsDetails/ProjectDetailsClass/ProjectDetailsClass'
 
-export const Automations = [
+export const projectsWithDataBase = [
     new projectDetailsClass
     (
         'Titulo Desafios',

@@ -1,12 +1,12 @@
 import {projectDetailsClass} from '../../../components/ProjectsDetails/ProjectDetailsClass/ProjectDetailsClass'
 
-export const Automations = [
+export const projectsWithDataBase = [
     new projectDetailsClass
     (
-        'Titulo Desafios',
-        'Challenge title',
-        "desafios desafios desafios desafios desafios desafios desafios desafios ",
-        "challenges challenges challenges challenges challenges challenges challenges ",
+        'Titulo projetos com banco de dados',
+        'Projects with database title',
+        "banco de dados banco de dados banco de dados banco de dados banco de dados banco de dados banco de dados ",
+        "database database database database database database database database database database database database database database ",
         'ProjectsDetails/automations/AutoPrice/Cape.jpg',
         [
             {

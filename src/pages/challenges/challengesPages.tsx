@@ -1,5 +1,5 @@
 import {ProjectsDetails} from '../../components/ProjectsDetails'
-import { Automations } from './Objects/challengesObjects'
+import { projectsWithDataBase } from './Objects/challengesObjects'
 
 export const ChallengesPage = () => {
 
@@ -8,7 +8,7 @@ export const ChallengesPage = () => {
              <ProjectsDetails
              categoryPTBR='Desafios'
              categoryENG='Challenges'
-             projects={Automations}
+             projects={projectsWithDataBase}
              />
         </div>
        

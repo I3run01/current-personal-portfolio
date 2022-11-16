@@ -5,8 +5,8 @@ export const AutomationsPage = () => {
     return (
         <div>
              <ProjectsDetails
-             categoryPTBR='Automations'
-             categoryENG='Automações'
+             categoryPTBR='Automações'
+             categoryENG='Automations'
              projects={Automations}
              />
         </div>
