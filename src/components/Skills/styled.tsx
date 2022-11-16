@@ -12,6 +12,7 @@ export const SkillsStyled = styled.div<Props>`
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
     margin-top: 100px;
+    margin-bottom: 200px;
 
     h1, h2 {
         font-family: 'Dosis', sans-serif;
@@ -32,14 +33,12 @@ export const SkillsStyled = styled.div<Props>`
                 position: relative;
                 min-height: 100px;
                 width: 200px;
-
+                
+                transition: border 0.2s ease-in-out;
 
                 :hover {
                     cursor: pointer;
-                    border-top: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
-                    border-bottom: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
-                    border-left: 1px solid ${props => props.theme === 'dark' ? '#ffffff' : '#000000'};
-                    background-color: rgba(123, 122, 153, 0.4);
+
                 }
 
                 :hover img {
@@ -51,7 +50,7 @@ export const SkillsStyled = styled.div<Props>`
                 }
 
                 :hover #paragraph {
-                    display: block;
+                    scale: 100%;
                 }
 
                 img {
@@ -69,22 +68,23 @@ export const SkillsStyled = styled.div<Props>`
                 #paragraph {
                     z-index: +1;
                     position: absolute;
-                    display: none;
                     top: 0;
                     left: 70px;
+                    transform: skewY(-50%);
                     width: calc(100vw - 150px);
-                    height: 300px;
+                    max-height: 550px;
                     overflow-y: auto;
                     cursor: default;
+                    scale: 0%;
 
                     /* From https://css.glass */
-                    background: rgba(123, 122, 153, 0.4);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                     backdrop-filter: blur(7.2px);
                     -webkit-backdrop-filter: blur(7.2px);
-                    border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
-
+                    border: 1px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     padding: 10px;
+
+                    transition: all 0.5s ease-in-out;
 
                     p {
                         font-size: 16px;

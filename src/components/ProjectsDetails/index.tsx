@@ -94,16 +94,17 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                 })}
 
                 <div className={`gallary ${gallary}`}>
+                    
                     <h1>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h1>
-                    <h2>{state.language.status === 'english' ? projects[indexGallary].titleENG : projects[indexGallary].titlePTBR}</h2>
-                    <div id='seeAllProject'>
 
-                        <div id='seeAllProjectIcon'>
+                    <h2>{state.language.status === 'english' ? projects[indexGallary].titleENG : projects[indexGallary].titlePTBR}</h2>
+
+                    <div id='seeAllProject'
+                    onClick={() => {changeGallaryStatus(0)}}>
+                        <div id='seeAllProjectIcon'                        >
                             <img src="Icons/seeAllProjectsIcon.svg" alt="" />
                         </div>
-
-                        <div id='seeAllProjectText'
-                        onClick={() => {changeGallaryStatus(0)}}>
+                        <div id='seeAllProjectText'                        >
                             <h3>
                                 {state.language.status === 'english' ? 'See all Project' : 'Ver todos os projetos'}
                             </h3>
