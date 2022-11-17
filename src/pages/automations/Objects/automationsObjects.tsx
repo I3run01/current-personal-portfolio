@@ -18,9 +18,19 @@ export const Automations = [
         [
             {
                image: 'ProjectsDetails/automations/AutoPrice/Gallary/comparador.gif',
-               textENG: 'Coding of comparison price part in Pyhon',
+               textENG: 'Coding of comparison price in Pyhon',
                textPTBR: 'Código em python da comparação de preço'
             },
+            {
+                image: 'ProjectsDetails/automations/AutoPrice/Gallary/mainScript.png',
+                textENG: 'MainScript of the software',
+                textPTBR: 'Script principal do software'
+             },
+             {
+                image: 'ProjectsDetails/automations/AutoPrice/Gallary/price update.png',
+                textENG: 'Coding of the price uptdate ',
+                textPTBR: 'Código que atualiza o preço dos produtos'
+             },
         ]
     ),
 ]
