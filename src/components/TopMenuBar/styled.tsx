@@ -41,11 +41,13 @@ export const TopMenuBarStyled = styled.div<props>`
     }
 
     @media screen and (min-width: 1000px) {
-        background: none;
+        right: 0;
+        width: 250px;
         box-shadow: none;
         backdrop-filter: blur(0px);
         -webkit-backdrop-filter: blur(0px);
         border: none;
+        justify-self: end;
     }
     
 `
