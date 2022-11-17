@@ -40,11 +40,11 @@ export const LeftMenuBar = () =>{
         <LeftMenuBarStyled className={menuOpen}>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>    
-                <Link to="CoverIndex" spy={true} smooth={true} offset={50} duration={500}> · {cover}</Link>
-                <Link to="AboutIndex" spy={true} smooth={true} offset={50} duration={500}> · {about}</Link>
-                <Link to="ExperiencesIndex" spy={true} smooth={true} offset={50} duration={500}> · {Experiences}</Link>
-                <Link to="skillsIndex" spy={true} smooth={true} offset={50} duration={500}> · {skills}</Link>
-                <Link to="projectsIndex" spy={true} smooth={true} offset={50} duration={500}> · {projects}</Link>
+                <Link to="CoverIndex" spy={true} smooth={true} offset={-20} duration={500}> · {cover}</Link>
+                <Link to="AboutIndex" spy={true} smooth={true} offset={-20} duration={500}> · {about}</Link>
+                <Link to="ExperiencesIndex" spy={true} smooth={true} offset={-20} duration={500}> · {Experiences}</Link>
+                <Link to="skillsIndex" spy={true} smooth={true} offset={-20} duration={500}> · {skills}</Link>
+                <Link to="projectsIndex" spy={true} smooth={true} offset={-20} duration={500}> · {projects}</Link>
             </div>
             -
         </LeftMenuBarStyled>
