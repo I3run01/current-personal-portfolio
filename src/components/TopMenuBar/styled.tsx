@@ -42,7 +42,7 @@ export const TopMenuBarStyled = styled.div<props>`
 
     @media screen and (min-width: 1000px) {
         right: 0;
-        background-color: none;
+        background: none;
         width: 250px;
         box-shadow: none;
         backdrop-filter: blur(0px);
