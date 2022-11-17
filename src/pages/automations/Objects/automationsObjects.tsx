@@ -33,4 +33,37 @@ export const Automations = [
              },
         ]
     ),
+
+    new projectDetailsClass
+    (
+        'Bitcoin Trade',
+        'Bitcoin Trade',
+        "Bot para fazer trade de Bitcoin",
+        "Bot to make trade in Bitcoin",
+        'ProjectsDetails/automations/Bitcoin Trade/Cape.png',
+        [
+            {
+                icons: 'Icons/GitHub.svg',
+                name: 'GitHub',
+                link: 'https://github.com/I3run01/Bitcoin-Trade'
+            },
+        ],
+        [
+            {
+               image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/BTC buy and Sell.gif',
+               textENG: 'Buy and Sell bitcoin script',
+               textPTBR: 'Script de compra e venda de bitcoin'
+            },
+            {
+                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/BTC price.jpg',
+                textENG: 'Script that shows the price of the Bitcoin',
+                textPTBR: 'Script que mostra o preço do Bitcoin'
+             },
+             {
+                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/mainScript.gif',
+                textENG: 'Main script of Bitcoin trade',
+                textPTBR: 'Script principal do trade do Bitcoin'
+             },
+        ]
+    ),
 ]
