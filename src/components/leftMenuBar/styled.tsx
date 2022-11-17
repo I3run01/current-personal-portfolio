@@ -32,6 +32,10 @@ export const LeftMenuBarStyled = styled.div`
                 color: #001D66;
             }
             overflow-x: hidden;
+            
+            :hover {
+                cursor: pointer;
+            }
         } 
     }
 

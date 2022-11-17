@@ -2,6 +2,7 @@ import { LeftMenuBarStyled } from "./styled"
 import { BurguerMenu } from "./BurgerMenu"
 import { useContext, useEffect, useState } from "react"
 import { Context } from "../../contexts/Context"
+import { Link } from 'react-scroll'
 
 export const LeftMenuBar = () =>{
     const {state, dispatch} = useContext(Context)
@@ -39,11 +40,11 @@ export const LeftMenuBar = () =>{
         <LeftMenuBarStyled className={menuOpen}>
             <div className={`container ${menuOpen}`}>
                 <BurguerMenu fction={handleMenuButton}/>    
-                <a href="#CoverIndex"> · {cover}</a>
-                <a href="#AboutIndex"> · {about}</a>
-                <a href="#ExperiencesIndex"> · {Experiences}</a>
-                <a href="#skillsIndex"> · {skills}</a>
-                <a href="#projectsIndex"> · {projects}</a>
+                <Link to="CoverIndex" spy={true} smooth={true} offset={50} duration={500}> · {cover}</Link>
+                <Link to="AboutIndex" spy={true} smooth={true} offset={50} duration={500}> · {about}</Link>
+                <Link to="ExperiencesIndex" spy={true} smooth={true} offset={50} duration={500}> · {Experiences}</Link>
+                <Link to="skillsIndex" spy={true} smooth={true} offset={50} duration={500}> · {skills}</Link>
+                <Link to="projectsIndex" spy={true} smooth={true} offset={50} duration={500}> · {projects}</Link>
             </div>
             -
         </LeftMenuBarStyled>
