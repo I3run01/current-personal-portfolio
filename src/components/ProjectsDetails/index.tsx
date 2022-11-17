@@ -52,6 +52,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                 <Link to="/"><img src="Icons/backButton.svg" alt="" className='backButton'/></Link>
 
                 <h1>{state.language.status === 'english' ? categoryENG : categoryPTBR}</h1>
+                
                 {projects.map((item, index)=>{
                     return (
                         <div id='container'>
@@ -129,6 +130,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         }
                     </div>
                 </div>
+
                 <div className={`gallaryBK ${gallaryOverflow}`}>
                 </div>
             </ProjectsDetailsStyles>

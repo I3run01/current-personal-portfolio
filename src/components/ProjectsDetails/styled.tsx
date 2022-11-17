@@ -117,8 +117,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             }
 
             #rightBottomDiv {
+                
                 width: 100%;
-
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -319,10 +319,6 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 display: flex;
                 flex-direction: row;
                 margin-top: -20px;
-
-                #rightBottomDiv {
-                    width: auto;
-                }
 
                 #leftBottomDiv {
                     flex-direction: column;
