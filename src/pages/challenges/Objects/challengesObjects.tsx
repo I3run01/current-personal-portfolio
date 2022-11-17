@@ -28,8 +28,8 @@ export const projectsWithDataBase = [
              },
              {
                 image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Sigma challenge 2.gif',
-                textENG: 'Second challenge',
-                textPTBR: 'Segundo desafio'
+                textENG: 'Second way to make the challenge 2',
+                textPTBR: 'Segunda maneira de fazer o desafio 2'
              },
         ]
     ),
