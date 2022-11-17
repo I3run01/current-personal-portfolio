@@ -143,10 +143,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
     .gallary {
         position: fixed;
         top: 15vh;
-        left: 10vw;
+        left: 2.5vw;
 
         height: 75vh;
-        width: 80vw;
+        width: 90vw;
         opacity: 0%;
         background-color: ${props => props.theme === 'dark' ? '#01001A' : '#E3E3E3'};
 
@@ -339,14 +339,16 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         }
 
         .gallary {
+            width: 90%;
+            left: 2vw;
 
             h1, h2 {
-                margin-left: 10vw;
+                margin-left: 15px;
             }
 
             #seeAllProject {
                 img {
-                    margin-left: 10vw;
+                    margin-left: 15px;
                 }
             }
 
@@ -355,7 +357,12 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 flex-wrap: wrap;
 
                 #images {
-                    width: 40%;
+                    width: calc(50% - 15px);
+                    padding-right: 15px;
+
+                    img {
+                        width: 95%;
+                    }
 
                     #paragrath {
 
