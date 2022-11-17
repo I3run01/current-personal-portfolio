@@ -3,24 +3,34 @@ import {projectDetailsClass} from '../../../components/ProjectsDetails/ProjectDe
 export const projectsWithDataBase = [
     new projectDetailsClass
     (
-        'Titulo Desafios',
-        'Challenge title',
-        "desafios desafios desafios desafios desafios desafios desafios desafios ",
-        "challenges challenges challenges challenges challenges challenges challenges ",
-        'ProjectsDetails/automations/AutoPrice/Cape.jpg',
+        'Desafio PI Sigma',
+        'Challenge PI Sigma',
+        "Esse é um desafio do Sigma, nesse desafio você tem que achar um número específico nos decimais de pi",
+        "This is a challenge from Sigma, in this challenge You should find a specific number in the pi decimals",
+        'ProjectsDetails/challenges/Sigma Pi Challenge/Cape.png',
         [
             {
                 icons: 'Icons/GitHub.svg',
                 name: 'GitHub',
-                link: 'https://github.com/I3run01/Projeto_Auto_Preco_Python'
+                link: 'https://github.com/I3run01/Challenge-Sigma-Geek'
             },
         ],
         [
             {
-               image: 'ProjectsDetails/automations/AutoPrice/Gallary/comparador.gif',
-               textENG: 'Coding of comparison price part in Pyhon',
-               textPTBR: 'Código em python da comparação de preço'
+               image: 'ProjectsDetails/challenges/Sigma Pi Challenge/mainScript.gif',
+               textENG: 'First challenge',
+               textPTBR: 'Primeiro desafio'
             },
+            {
+                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Sigma challenge 2.gif',
+                textENG: 'Second challenge',
+                textPTBR: 'Segundo desafio'
+             },
+             {
+                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Sigma challenge 2.gif',
+                textENG: 'Second challenge',
+                textPTBR: 'Segundo desafio'
+             },
         ]
     ),
 ]
