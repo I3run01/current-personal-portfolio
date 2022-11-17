@@ -17,17 +17,17 @@ export const projectsWithDataBase = [
         ],
         [
             {
-               image: 'ProjectsDetails/challenges/Sigma Pi Challenge/mainScript.gif',
+               image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Gallary/mainScript.gif',
                textENG: 'First challenge',
                textPTBR: 'Primeiro desafio'
             },
             {
-                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Sigma challenge 2.gif',
+                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Gallary/Sigma challenge 2.gif',
                 textENG: 'Second challenge',
                 textPTBR: 'Segundo desafio'
              },
              {
-                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Sigma challenge 2.gif',
+                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Gallary/Sigma challenge 2.gif',
                 textENG: 'Second way to make the challenge 2',
                 textPTBR: 'Segunda maneira de fazer o desafio 2'
              },
