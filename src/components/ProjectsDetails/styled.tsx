@@ -250,34 +250,6 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         z-index: 3;
     }
 
-    .gallaryBK {
-        position: fixed;
-        bottom: -10px;
-        left: -10px;
-
-        height: 20px;
-        width: 20px;
-
-        border-radius: 50%;
-        backdrop-filter: blur(7px);
-        transition: all 0.5s ease-in-out;
-
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        z-index: 2;
-
-
-    }
-
-    .gallaryBKOn {
-        scale: 0%;
-    }
-
     @media screen and (min-width: 700px) {
         #container {
             #topDiv {

@@ -135,9 +135,6 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                         }
                     </div>
                 </div>
-
-                <div className={`gallaryBK ${gallaryOverflow}`}>
-                </div>
             </ProjectsDetailsStyles>
         </MainStyled>
     )
