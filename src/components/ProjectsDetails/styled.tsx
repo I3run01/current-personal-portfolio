@@ -275,7 +275,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
     }
 
     .gallaryBKOn {
-        scale: 100000%;
+        scale: 0%;
     }
 
     @media screen and (min-width: 700px) {

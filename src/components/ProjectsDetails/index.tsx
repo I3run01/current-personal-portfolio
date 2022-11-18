@@ -57,7 +57,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                     return (
                         <div id='container'
                         style={gallary === 'gallaryHidden' ? 
-                        {display:'block'} : {display: 'none'}}>
+                        {opacity:'100%'} : {opacity:'0%'}}>
                             <div id='topDiv'>
                                 <img src={item.imageCape} alt="" />
                                 <div>
