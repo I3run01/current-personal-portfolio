@@ -7,7 +7,7 @@ type Props = {
 }
 
 export const BurguerMenu = ({fction}:Props) => {
-    const [openMenu, setOpenMenu] = useState<string>('menuClosed')
+    const [openMenu, setOpenMenu] = useState<string>('menuOpened')
     const [mouseIn, setMouseIn] = useState<boolean>(false)
 
     const {state, dispatch} = useContext(Context)

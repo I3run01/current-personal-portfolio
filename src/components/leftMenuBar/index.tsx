@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 
 export const LeftMenuBar = () =>{
     const {state, dispatch} = useContext(Context)
-    const [menuOpen, setMenuOpen] = useState<string>('closed')
+    const [menuOpen, setMenuOpen] = useState<string>('opened')
 
     //Texts
     const [cover, setCover] = useState<string>(state.language.status === 'english' ? 'Cover' : 'Capa')
