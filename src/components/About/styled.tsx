@@ -31,7 +31,7 @@ export const AboutStyled = styled.div`
         border: 4px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
         background-color: rgba(0, 57, 204, 20%);
         text-align: center;
-        font-family: ope;
+        font-family: 'Open Sans', sans-serif;
 
         p {
             padding: 10px;
