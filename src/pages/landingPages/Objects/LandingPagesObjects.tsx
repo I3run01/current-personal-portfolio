@@ -27,20 +27,25 @@ export const landingPages = [
                textPTBR: 'Página que fala sobre mim'
             },
             {
+                image: 'ProjectsDetails/landingPages/oldPortfolio/Gallary/openMenus.png',
+                textENG: 'Old portfolio with the menu open',
+                textPTBR: 'Portfólio antigo com o menu aberto'
+            },
+            {
                 image: 'ProjectsDetails/landingPages/oldPortfolio/Gallary/Dark theme.png',
                 textENG: 'Dark theme in the site',
                 textPTBR: 'Tema escuro do site'
-             },
-             {
+            },
+            {
                 image: 'ProjectsDetails/landingPages/oldPortfolio/Gallary/Projects.png',
                 textENG: "This part of my old portfolio shows the projects I've done",
                 textPTBR: 'Essa parte do site mostra os projetos que fiz'
-             },
-             {
+            },
+            {
                 image: 'ProjectsDetails/landingPages/oldPortfolio/Gallary/Skills.png',
                 textENG: "This part of my old portfolio shows the skills that I have",
                 textPTBR: 'Essa parte do site mostra as habilidades que tenho'
-             },
-        ]
+            },
+    ]
     ),
 ]
