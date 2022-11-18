@@ -55,7 +55,9 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                 
                 {projects.map((item, index)=>{
                     return (
-                        <div id='container'>
+                        <div id='container'
+                        style={gallary === 'gallaryHidden' ? 
+                        {display:'block'} : {display: 'none'}}>
                             <div id='topDiv'>
                                 <img src={item.imageCape} alt="" />
                                 <div>
