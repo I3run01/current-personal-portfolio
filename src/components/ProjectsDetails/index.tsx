@@ -51,7 +51,10 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
 
                 <Link to="/"><img src="Icons/backButton.svg" alt="" className='backButton'/></Link>
 
-                <h1>{state.language.status === 'english' ? categoryENG : categoryPTBR}</h1>
+                <h1
+                style={gallary === 'gallaryHidden' ? 
+                {opacity:'100%'} : {opacity:'0%'}}
+                >{state.language.status === 'english' ? categoryENG : categoryPTBR}</h1>
                 
                 {projects.map((item, index)=>{
                     return (
