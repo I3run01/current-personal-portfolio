@@ -142,10 +142,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallary {
         position: fixed;
-        top: 15vh;
+        top: 10vh;
         left: 2.5vw;
 
-        height: 75vh;
+        height: 85vh;
         width: 90vw;
         opacity: 0%;
         background-color: ${props => props.theme === 'dark' ? '#01001A' : '#E3E3E3'};
@@ -210,24 +210,11 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             margin: auto;
             
             #images {
-                position: relative;
-                margin-top: 20px;
-
+                margin-top: 5px;
                 display: flex;
+                flex-direction: column-reverse;
                 justify-content: center;
-
-                :hover {
-                    cursor: pointer;
-                }
-
-                :hover img {
-                    filter:  saturate(10%) brightness(50%);
-                    backdrop-filter: blur(6px);
-                }
-
-                :hover #paragrath {
-                    opacity: 100%;
-                }
+                align-items: center;
 
                 img {
                     border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
@@ -236,33 +223,25 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 }
 
                 #paragrath {
-                    position: absolute;
-                    top: 0px;
-                    left:0px;
-                    height: 100%;
-                    width: 90%;
 
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: 10px;
-                    opacity: 0;
                     transition: all 0.5s ease-in-out;
 
                     p {
                         font-size: 16px;
-                        line-height: 28px;
+                        line-height: 24px;
                         font-family: 'Open Sans', sans-serif;
-                        color: #ffffff;
+                        color: ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                         text-align: center;
                         overflow: hidden;
                         font-weight: bolder;
                     }
                     
                 }
-            }
-
-            
+            }        
         } 
     }
 
@@ -330,12 +309,6 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 
                 }
             }
-
-            
-
-
-
-            
         }
 
         .gallary {
@@ -353,15 +326,16 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             }
 
             #imagesContainer {
-                flex-direction: row;
-                flex-wrap: wrap;
 
                 #images {
-                    width: calc(50% - 15px);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    width: 95%;
                     padding-right: 15px;
 
                     img {
-                        width: 95%;
+                        width: 70%;
                     }
 
                     #paragrath {
