@@ -210,7 +210,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
             margin: auto;
             
             #images {
-                margin-top: 5px;
+                margin-top: 6vh;
+                margin-bottom: 6vh;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: center;
