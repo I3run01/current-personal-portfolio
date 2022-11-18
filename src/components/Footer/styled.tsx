@@ -9,4 +9,5 @@ export const StyledFooter = styled.div`
     width:  100%;
 
     background-color: #7199ff;
+    color: #ffffff;
 `
