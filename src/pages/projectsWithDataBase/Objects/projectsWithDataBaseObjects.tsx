@@ -5,8 +5,8 @@ export const projectsWithDataBase = [
     (
         'Página de Login HeroQuestions', //titleENG
         'Login Page HeroQuestions', //titlePTBR
-        "este projeto foi desenvolvido para testar minhas habilidades em Node.JS, banco de dados, backend em geral. Neste projeto você coloca algumas habilidades de um herói que você gosta e essas habilidades serão salvas no banco de dados. Eu usei mongoDB como banco de dados. Este projeto também tem um sistema de login e outro de criar conta.", //DescriptionPTBR
-        "this project was developed to test my abilities in Node.JS, database, backend in general. In this project you put some skills of one hero you like and this skills will be save in the database. I used mongoDB as database. This project also has a signup and a sigin page.", //DescriptionENG
+        "Este projeto foi desenvolvido para testar minhas habilidades em Node.JS, banco de dados, backend em geral. Neste projeto você coloca algumas habilidades de um herói que você gosta e essas habilidades serão salvas no banco de dados. Eu usei mongoDB como banco de dados. Este projeto também tem um sistema de login e outro de criar conta.", //DescriptionPTBR
+        "This project was developed to test my abilities in Node.JS, database, backend in general. In this project you put some skills of one hero you like and this skills will be save in the database. I used mongoDB as database. This project also has a signup and a sigin page.", //DescriptionENG
         'ProjectsDetails/projectsWithDataBase/HeroQuestions/Cape.png', //Cape image
         [
             {

@@ -68,7 +68,8 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         #bottomDiv {
             display: flex;
             flex-direction: column-reverse;
-            margin-top: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
 
             #leftBottomDiv {
                 display: flex;
@@ -142,10 +143,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
 
     .gallary {
         position: fixed;
-        top: 10vh;
+        top: 100px;
         left: 2.5vw;
 
-        height: 85vh;
+        height: 75vh;
         width: 90vw;
         opacity: 0%;
         background-color: ${props => props.theme === 'dark' ? '#01001A' : '#E3E3E3'};
@@ -285,6 +286,7 @@ export const ProjectsDetailsStyles = styled.div<Props>`
         }
 
         .gallary {
+            height: 80vh;
             width: 90%;
             left: 2vw;
 
