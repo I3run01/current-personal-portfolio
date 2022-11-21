@@ -125,7 +125,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                                     <div id='images'>
                                         <img src={item.image} alt="" />
                                         <div id='paragrath'>
-                                            <p>
+                                            <p className='new-line'>
                                                 {state.language.status === 'english' ? item.textENG : item.textPTBR}
                                             </p>
                                         </div>

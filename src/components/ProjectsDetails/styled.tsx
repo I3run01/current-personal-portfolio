@@ -218,6 +218,10 @@ export const ProjectsDetailsStyles = styled.div<Props>`
                 justify-content: center;
                 align-items: center;
 
+                .new-line {
+                    white-space: pre-line;
+                }
+
                 img {
                     border: 3px solid ${props => props.theme === 'dark' ? titleDarkColor : titleLightColor};
                     width: 90%;
