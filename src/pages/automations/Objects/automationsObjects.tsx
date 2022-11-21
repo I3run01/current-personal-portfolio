@@ -28,8 +28,19 @@ export const Automations = [
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/First MenuBar.png',
-                textENG: "Fist Menubar 1 - Reload the page 2- Make product registration 3- See all product",
-                textPTBR: 'Primeira barra de menu 1- Recarregar a página 2- Para registrar os preços 3 - Ver todos os produtos'
+                textENG: 
+                `
+                    Fist Menubar \n
+                    1 - Reload the page \n
+                    2 - Make product registration \n
+                    3 - See all product \n`,
+                textPTBR: 
+                `
+                    Primeira barra de menu \n
+                    1 - Recarregar a página \n
+                    2- Para registrar os preços \n
+                    3 - Ver todos os produtos \n
+                `
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/Products without registration.png',
@@ -48,33 +59,50 @@ export const Automations = [
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/Second MenuBar.png',
-                textENG: 'Second menubar. All product registrated If all products had been registrated 1 - To continue 2 - To see all registrated product 3 - register in Londrisoft 4 - print the price in the Londrisoft',
-                textPTBR: 'Segunda barra de menu. Mostra essa barra se todos os produtos tiverem cadastrodos 1 - Continuar 2 -Ver todos os produtos registrados 3 - Registrar os produtos na londrisoft 4 - Imprimir os preços na Londrisoft',
+                textENG: 
+                `
+                    Second menubar. \n
+                    All product registrated If all products had been registrated \n
+                    1 - To continue \n
+                    2 - To see all registrated product \n
+                    3 - register in Londrisoft \n
+                    4 - print the price in the Londrisoft \n
+                `,
+                textPTBR: 
+                `
+                    Segunda barra de menu. \n
+                    Mostra essa barra se todos os produtos tiverem cadastrodos \n
+                    1 - Continuar \n
+                    2 -Ver todos os produtos registrados \n
+                    3 - Registrar os produtos na londrisoft \n
+                    4 - Imprimir os preços na Londrisoft \n
+                `
+                ,
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/Third MenuBar.png',
                 textENG: `
-                    Last menubar
-                    0 - To finish the software
-                    1 -  See the products that have increased the prices
-                    2 - See the products that have decreased the prices
-                    3 - See the products that have no changes in the prices
-                    4 - Update the prices that have increased the prices
-                    5 - Update the prices that have decreased the prices
-                    6 - Print the prices that have increased the prices 
-                    7 - Print the prices that have decreased the prices
+                    Last menubar \n
+                    0 - To finish the software \n
+                    1 -  See the products that have increased the prices \n
+                    2 - See the products that have decreased the prices \n
+                    3 - See the products that have no changes in the prices \n
+                    4 - Update the prices that have increased the prices \n
+                    5 - Update the prices that have decreased the prices \n
+                    6 - Print the prices that have increased the prices \n
+                    7 - Print the prices that have decreased the prices \n
                 `,
                 textPTBR: 
                 `
                     Última barra de menu
-                    0 - Finalizar o software
-                    1 - Ver todos os produtos que subiram os preços
-                    2 - Ver todos os produtos que diminuiram os preços
-                    3 - Ver os produtos que não mudaram os preços
-                    4 - Atualizar os produtos que aumentaram os preços
-                    5 - Atualizar os produtos que não aumentam os preços
-                    6 - Imprimir os produtos que aumentaram os preços
-                    7 - Impremir os produtos que diminuiram os preços
+                    0 - Finalizar o software \n                   
+                    1 - Ver todos os produtos que subiram os preços \n                  
+                    2 - Ver todos os produtos que diminuiram os preços \n
+                    3 - Ver os produtos que não mudaram os preços \n
+                    4 - Atualizar os produtos que aumentaram os preços \n
+                    5 - Atualizar os produtos que não aumentam os preços \n
+                    6 - Imprimir os produtos que aumentaram os preços \n
+                    7 - Impremir os produtos que diminuiram os preços \n
                 `,
             },
             
