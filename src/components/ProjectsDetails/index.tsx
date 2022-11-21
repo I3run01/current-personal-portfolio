@@ -103,7 +103,7 @@ export const ProjectsDetails = ({categoryPTBR, categoryENG, projects}:Props) => 
                     
                     <h1>{state.language.status === 'english' ? 'Gallary' : 'Galeria'}</h1>
 
-                    <text>{state.language.status === 'english' ? projects[indexGallary].titleENG : projects[indexGallary].titlePTBR}</text>
+                    <h2>{state.language.status === 'english' ? projects[indexGallary].titleENG : projects[indexGallary].titlePTBR}</h2>
 
                     <div id='seeAllProject'
                     onClick={() => {changeGallaryStatus(0)}}>
