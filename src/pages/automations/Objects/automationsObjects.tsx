@@ -49,13 +49,13 @@ export const Automations = [
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/Option 2.png',
-                textENG: 'Option 2. Here you put the products information and below it will shows the product price',
-                textPTBR: 'Opção 2. Aqui você coloca as informaçãos do produto e em baixo aparede  preço deles'
+                textENG: 'Option 2. \n Here you put the products information and below it will shows the product price',
+                textPTBR: 'Opção 2. \n Aqui você coloca as informaçãos do produto e em baixo aparede  preço deles'
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/Option 3.png',
-                textENG: 'Option 3. See all products in the note',
-                textPTBR: 'Opção 3. Ver todos os produtos da nota',
+                textENG: 'Option 3. \n See all products in the note',
+                textPTBR: 'Opção 3. \n Ver todos os produtos da nota',
             },
             {
                 image: 'ProjectsDetails/automations/AutoPrice/Gallary/Second MenuBar.png',
@@ -94,7 +94,7 @@ export const Automations = [
                 `,
                 textPTBR: 
                 `
-                    Última barra de menu
+                    Última barra de menu \n
                     0 - Finalizar o software \n                   
                     1 - Ver todos os produtos que subiram os preços \n                  
                     2 - Ver todos os produtos que diminuiram os preços \n
