@@ -18,18 +18,34 @@ export const projectsWithDataBase = [
         [
             {
                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Gallary/mainScript.gif',
-               textENG: 'First challenge',
-               textPTBR: 'Primeiro desafio'
+               textENG: 
+               `
+                First challenge \n
+                What is the first 9-digit palindromic prime found in the decimal expansion of Pi? \n
+                Number: 318272813 
+               `,
+               textPTBR: 
+               `
+                Primeiro desafio \n
+                Qual é o primeiro primo palíndromo de 9 dígitos encontrado na expansão decimal de Pi? \n
+                Numero: 318272813
+
+               `
             },
             {
                 image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Gallary/Sigma challenge 2.gif',
-                textENG: 'Second challenge',
-                textPTBR: 'Segundo desafio'
-             },
-             {
-                image: 'ProjectsDetails/challenges/Sigma Pi Challenge/Gallary/Sigma challenge 2.gif',
-                textENG: 'Second way to make the challenge 2',
-                textPTBR: 'Segunda maneira de fazer o desafio 2'
+                textENG: 
+                `
+                   Second challenge \n
+                   What is the first 21-digit palindromic prime found in the decimal expansion of Pi? \n
+                   Number: 151978145606541879151 
+                `,
+                textPTBR: 
+                `
+                    Segundo desafio \n
+                    Qual é o primeiro primo palíndromo de 21 dígitos encontrado na expansão decimal de Pi? \n
+                    Número: 151978145606541879151
+                `
              },
         ]
     ),
