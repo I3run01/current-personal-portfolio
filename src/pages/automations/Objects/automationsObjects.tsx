@@ -113,8 +113,8 @@ export const Automations = [
     (
         'Bitcoin Trade',
         'Bitcoin Trade',
-        "Bot para fazer trade de Bitcoin",
-        "Bot to make trade in Bitcoin",
+        "This is script make Bitcoin's trading, but to use this script, yours Bitcoin should have stay in Binance",
+        "Esse script faz trade de Bitcoin, mas para usar esse script, suas criptomoedas tem que estar na Binanca",
         'ProjectsDetails/automations/Bitcoin Trade/Cape.png',
         [
             {
@@ -125,20 +125,43 @@ export const Automations = [
         ],
         [
             {
-               image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/BTC buy and Sell.gif',
-               textENG: 'Buy and Sell bitcoin script',
-               textPTBR: 'Script de compra e venda de bitcoin'
+               image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/Change the name.png',
+               textENG: 'Change the name of the file ',
+               textPTBR: 'Mude o nome do arquivo'
             },
             {
-                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/BTC price.jpg',
-                textENG: 'Script that shows the price of the Bitcoin',
-                textPTBR: 'Script que mostra o preço do Bitcoin'
-             },
-             {
-                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/mainScript.gif',
-                textENG: 'Main script of Bitcoin trade',
-                textPTBR: 'Script principal do trade do Bitcoin'
-             },
+                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/Put the Api Key and APi Secret.png',
+                textENG: 'Put the api_Key and Apy_Secret',
+                textPTBR: 'Coloque a api_Key e Apy_Secret'
+            },
+            {
+                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/change the price of BTC.png',
+                textENG: 
+                `
+                    The bot will \n
+                    buy btc in 20k \n
+                    sell in 22k \n
+                    rebuy in 24k \n
+                `,
+                textPTBR: 
+                `
+                    O bot vai \n
+                    comprar btc em 20k \n
+                    vender em 22k \n
+                    recomprar em 24k \n 
+                `
+            },
+            {
+                image: 'ProjectsDetails/automations/Bitcoin Trade/Gallary/Software is working.png',
+                textENG: 
+                `
+                    if here shows "running", it means that the software in working
+                `,
+                textPTBR: 
+                `
+                    Se aqui aparecer "running", signiica que o software está funcionando
+                `
+            },
         ]
     ),
 ]
