@@ -17,12 +17,19 @@ export const RightMenuBar = () => {
     'CV/CurrentCV_ENG.docx':
     'CV/CurriculoPTBR_Atual.docx')
 
+    const [instagram, setInstagram] = useState<string>( state.language.status === 'english' ? 
+    'https://www.instagram.com/i3runo_developer/':
+    'https://www.instagram.com/i3runo_developer_bra/')
+
     const closerOrOpenMenu = () => {
         sideMenhOpenedOrClosed === 'closed' ? setSideMenhOpenedOrClosed('opened') : setSideMenhOpenedOrClosed('closed')
     }
 
     useEffect(() => {
         state.language.status === 'english' ? setCurriculum('CV/CurrentCV_ENG.docx') : setCurriculum('CV/CurriculoPTBR_Atual.docx')
+        state.language.status === 'english' 
+            ? setInstagram('https://www.instagram.com/i3runo_developer/') 
+            : setInstagram('https://www.instagram.com/i3runo_developer_bra/')
     }, [state.language.status])
 
     return (
@@ -37,7 +44,7 @@ export const RightMenuBar = () => {
                     <a href="https://www.linkedin.com/in/i3run01/" target="_black"><LinkedInIcon/></a>
                     <a href="https://github.com/I3run01" target="_black"><GitHubIcon/></a>
                     <a href={curriculum}><CvIcon/></a>
-                    <a href="https://www.instagram.com/i3run01developer/" target="_black"><InstagramIcon/></a>
+                    <a href={instagram} target="_black"><InstagramIcon/></a>
                 </div>
                 <div className="topLine"></div>
                 <div className="bottomLine"></div>
