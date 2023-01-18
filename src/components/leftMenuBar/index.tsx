@@ -46,7 +46,7 @@ export const LeftMenuBar = () =>{
                 <Link to="skillsIndex" spy={true} smooth={true} offset={-20} duration={500}> · {skills}</Link>
                 <Link to="projectsIndex" spy={true} smooth={true} offset={-20} duration={500}> · {projects}</Link>
             </div>
-            -
+            
         </LeftMenuBarStyled>
     )
 }
