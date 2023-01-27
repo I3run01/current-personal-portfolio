@@ -48,4 +48,104 @@ export const landingPages = [
             },
     ]
     ),
+    new projectDetailsClass
+    (
+        'Portifólio da Gil',
+        "Gil's portfolio",
+        `
+        Realizei esse projeto em React.JS.
+        Usei o chat GPT para realizar algumas descrições e utilizei o midjourney para criar as imagens do projeto, trabalhei com variáveis globais (ContextAPI) e componentes.
+        O projeto tem os temas dark e light, além disso, dentro do portfólio dela, o background muda conforme você muda o projeto que estiver vendo.`,
+        `
+        II realized this project in React.JS.
+        I used the GPT chat to perform some descriptions and I used midjourney to create the project images, I worked with global variables (ContextAPI) and components.
+        The project has dark and light themes, in addition, within her portfolio, the background changes as you change the project you are viewing.`
+        ,
+        "ProjectsDetails/landingPages/Gil's portfolio/Cape.png",
+        [
+            {
+                icons: 'Icons/GitHub.svg',
+                name: 'GitHub',
+                link: 'https://github.com/I3run01/Gil-s-project'
+            },
+            {
+                icons: 'Icons/Deploy.svg',
+                name: 'Deploy',
+                link: 'https://gilportfolio.netlify.app/'
+            }
+        ],
+        [
+            {
+               image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Cape.png",
+               textENG: "Portfolio's cape",
+               textPTBR: 'Capa do portfólio'
+            },
+            {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/About.png",
+                textENG: "Portfolio's about",
+                textPTBR: 'Sobre do portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Experience.png",
+                textENG: "Portfolio's experience",
+                textPTBR: 'Experiência do portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Deployment.png",
+                textENG: "Portfolio's deployment",
+                textPTBR: 'Depoimentos do portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Deployment.png",
+                textENG: "Portfolio's deployment",
+                textPTBR: 'Depoimentos do portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Lógica de programação.png",
+                textENG: "Programming logic in portfolio",
+                textPTBR: 'Lógica de programação no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Professora conteudista.png",
+                textENG: "Content teacher in portfolio",
+                textPTBR: 'Professra conteúdista no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Robótica.png",
+                textENG: "Robotic in portfolio",
+                textPTBR: 'Robótica no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Cape Mobile.png",
+                textENG: "Mobile cape in portfolio",
+                textPTBR: 'Capa em mobile no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/About Mobile.png",
+                textENG: "Mobile about in portfolio",
+                textPTBR: 'Sobre em mobile no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Experience Mobile.png",
+                textENG: "Mobile experience in portfolio",
+                textPTBR: 'Experiência em mobile no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Deployment Mobile.png",
+                textENG: "Mobile deployments in portfolio",
+                textPTBR: 'Depoimentos em mobile no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Professora conteudista Mobile.png",
+                textENG: "Mobile content teacher in portfolio",
+                textPTBR: 'Professora conteudista em mobile no portfólio'
+             },
+             {
+                image: "ProjectsDetails/landingPages/Gil's portfolio/Gallary/Galeria Mobile.png",
+                textENG: "Mobile gallry in portfolio",
+                textPTBR: 'Galeria Mobile no portfólio'
+             },
+             
+    ]
+    ),
 ]
