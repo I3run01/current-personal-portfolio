@@ -148,4 +148,81 @@ export const landingPages = [
              
     ]
     ),
+    new projectDetailsClass
+    (
+        'site do mercado vizinhança',
+        "neighborhood market",
+        `
+        Esse projeto é um site para um mercado de bairro, Mercado Vizinhança, o site consiste em uma página única com setores diferentes, panificadora, açougue...Criei o site com react.JS, typescript, vite, além dissso, usei algumas bibliotecas, como react-scroll, styled components e Swiper.
+         `,
+        `
+        This project is a website for a neighborhood market, Mercado Vizinhança, the website consists of a single page with different sectors, bakery, butcher...
+        I created the site with react.JS, typescript, vite, in addition, I used some libraries, like react-scroll, styled components and Swiper.`
+        ,
+        "ProjectsDetails/landingPages/Mercado Viz/Cape.png",
+        [
+            {
+                icons: 'Icons/GitHub.svg',
+                name: 'GitHub',
+                link: 'https://github.com/I3run01/projeto-mercado-vizinhanca'
+            },
+            {
+                icons: 'Icons/Deploy.svg',
+                name: 'Deploy',
+                link: 'https://mercado-vizinhanca.netlify.app/'
+            }
+        ],
+        [
+           {
+              image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Inicio.png",
+              textENG: "Start",
+              textPTBR: 'Inicio'
+           },
+           {
+              image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Panificadora.png",
+              textENG: "Bakery",
+              textPTBR: 'Panificadora'
+           },        
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Açougue.png",
+               textENG: "Açougue",
+               textPTBR: "Butcher's"
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Mercado.png",
+               textENG: "Market",
+               textPTBR: 'Mercado'
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Hortifruti.png",
+               textENG: "Hortifruti",
+               textPTBR: 'Hortifruti'
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Açougue Mobile.png",
+               textENG: "Mobile butcher",
+               textPTBR: 'Açougue em mobile'
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Hortifruti Mobile.png",
+               textENG: "Mobile hortifruti",
+               textPTBR: 'Hortifruti em mobile'
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Inicio Mobile.png",
+               textENG: "Mobile start",
+               textPTBR: 'Inicio em mobile'
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Mercado Mobile.png",
+               textENG: "Mobile market",
+               textPTBR: 'Mercado Mobile'
+            },
+            {
+               image: "ProjectsDetails/landingPages/Mercado Viz/Gallery/Panificadora Mobile.png",
+               textENG: "Mobile bakary",
+               textPTBR: 'Panificadora Mobile'
+            },
+         ]
+    ),
 ]
